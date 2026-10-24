@@ -1,11 +1,11 @@
 # RAGScaleBench: Systems Benchmarking & Query-Adaptive Retrieval Platform
 
-[![Test Suite](https://img.shields.io/badge/pytest-64%20passed-emerald.svg)](tests/)
+[![Evaluation verification](https://github.com/abhi06032005/rag_eval/actions/workflows/evaluation-verification.yml/badge.svg)](https://github.com/abhi06032005/rag_eval/actions/workflows/evaluation-verification.yml)
 [![Scientific Integrity Audit](https://img.shields.io/badge/Audit-Priority%201%20Verified-blue.svg)](reports/scientific_integrity_audit.md)
 [![Zero Leakage](https://img.shields.io/badge/Splits-Zero%20Leakage-success.svg)](data/external/)
 [![Next.js Frontend](https://img.shields.io/badge/Web%20Platform-Next.js%2016-black.svg)](web/)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](pyproject.toml)
-[![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![Research artifacts](https://img.shields.io/badge/Results-Historical%20Evidence-blue.svg)](reports/EVALUATION_MATRIX_REPORT.md)
 
 > **A scientifically audited, reproducible systems evaluation platform decoupling embedding representation error, vector quantization, and ANN distortion, paired with a calibrated query-adaptive hybrid retrieval engine and production-grade generative RAG serving.**
 
@@ -15,13 +15,19 @@
 
 Modern Retrieval-Augmented Generation (RAG) applications frequently assume that unconditionally running both lexical (BM25) and dense bi-encoder retrieval stages for every incoming query is optimal. **RAGScaleBench** rigorously evaluates this assumption across authentic BEIR benchmarks: **SciFact** (biomedical claims, 5,183 docs), **NFCorpus** (clinical nutrition, 3,633 docs), and **FiQA** (financial QA, 57,638 docs).
 
-### Key Empirical Findings:
+### Archived retrieval results (official BEIR test splits)
 
-| Corpus / Domain | Corpus Docs | Test Queries | Lexical BM25 | Dense Exact | Fixed Hybrid (RRF k=60) | Adaptive Router | Dense Calls Saved | Systems Finding |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
-| **BEIR/SciFact** | 5,183 | 300 | 0.6653 | 0.6406 | 0.6851 | **0.6861** | **46.0% (138 / 300)** | Non-inferior ($p=0.9160$), -22.3% p50 latency |
-| **BEIR/NFCorpus** | 3,633 | 323 | 0.3218 | 0.3129 | **0.3448** | 0.3340 | **18.6% (60 / 323)** | Retains 97% hybrid nDCG, slight recall dip |
-| **BEIR/FiQA** | 57,638 | 648 | 0.2361 | **0.3532 (5.3 ms)** | 0.3300 | 0.3216 | 10.2% (66 / 648) | **Dense strictly superior ($p=0.0296$)**; 24x faster |
+Values below are from committed historic metrics and paired comparison artifacts, **not a new full-corpus rerun**. Full matrices (nDCG@10, Recall@10, MRR, ANN distortion, bootstrap CIs, concurrency and generation) and source-path caveats are in [Evaluation Matrix Report](reports/EVALUATION_MATRIX_REPORT.md).
+
+| Corpus | Test queries | BM25 nDCG@10 | Dense Exact | Fixed Hybrid | Adaptive Router | Finding |
+|---|---:|---:|---:|---:|---:|---|
+| **BEIR/SciFact** | 300 | 0.6432 | 0.6451 | 0.6799* | 0.6861 | Adaptive avoided 138/300 dense calls; p99 worsened |
+| **BEIR/NFCorpus** | 323 | 0.2934 | 0.3181 | **0.3312** | 0.3211 | Fixed Hybrid outperformed Adaptive |
+| **BEIR/FiQA** | 648 | 0.2247 | **0.3532** | 0.3300 | 0.3216 | Dense Exact outperformed fusion (p=0.0296) |
+
+*SciFact fixed-hybrid D50 is 0.6799 in the matched statistical comparison but 0.6851 in the canonical results registry. This remains **unresolved**; do not claim a single finalized SciFact D50 hybrid estimate without rerunning source rankings. See the report's discrepancy section. No results should be described as independently reproduced by CI.
+
+**Benchmark scope:** SciFact 5,183 documents, NFCorpus 3,633, FiQA 57,638 (66,454 total). Retrieval relevance is evaluated with graded/ranked metrics. No binary confusion matrices are claimed without thresholded document-level prediction labels.
 
 ---
 
@@ -29,8 +35,8 @@ Modern Retrieval-Augmented Generation (RAG) applications frequently assume that 
 
 In accordance with strict research integrity standards, all previously reported experimental results were audited and documented in [`reports/scientific_integrity_audit.md`](reports/scientific_integrity_audit.md):
 
-1. **FiQA Embedding Task-197 Verification:** Forensic log inspection confirmed that `task-197` ran `.venv\Scripts\python.exe scripts/embed_and_evaluate_fiqa.py` for 2,664.4 seconds (44.4 minutes), successfully embedding all 57,638 FiQA documents in 12 shards without data fabrication.
-2. **BEIR Ground-Truth Split Discrepancy Resolved:** Official BEIR FiQA ground truth contains **500 development queries** (1,238 positive qrels) and **648 test queries** (1,706 positive qrels). The report's prior mention of "648 development queries" was a typographical clerical error duplicating the test set count. Threshold calibration was independently audited and verified to have genuinely executed on the 500 dev queries with **0 test-set overlap**.
+1. **Archived FiQA execution evidence (not reproduced by clean checkout):** Historical forensic log inspection recorded that `task-197` ran `.venv\Scripts\python.exe scripts/embed_and_evaluate_fiqa.py` for 2,664.4 seconds (44.4 minutes), successfully embedding all 57,638 FiQA documents in 12 shards without data fabrication.
+2. **Archived BEIR split audit:** The prior audit records official FiQA ground truth containing **500 development queries** (1,238 positive qrels) and **648 test queries** (1,706 positive qrels). The report's prior mention of "648 development queries" was a typographical clerical error duplicating the test set count. Threshold calibration was independently audited and verified to have genuinely executed on the 500 dev queries with **0 test-set overlap**.
 3. **Exploratory Non-Inferiority Classification:** The 0.025 nDCG non-inferiority margin was chosen retrospectively to match IR domain variance. It is officially reclassified as **exploratory post-hoc non-inferiority testing** rather than a pre-registered confirmatory trial.
 4. **Explicit Reporting of FiQA Dense Superiority:** On the 57,638-document financial corpus, **Dense Exact (0.3532 nDCG@10, 5.29 ms)** strictly beats Fixed Hybrid (0.3300, $p=0.0296$) and Adaptive Router (0.3216, $p=0.0034$). Unconditional lexical fusion introduces **semantic dilution** and a 121.8 ms BM25 inverted index scan penalty.
 5. **Tail-Latency Regression Disclosed:** While median (p50) latency drops by **22.3%** (34.00 ms vs 43.74 ms), 99th percentile (p99) latency regresses by **+14.3%** (101.23 ms vs 88.55 ms) due to compound sequential fallback overhead on hard queries.
@@ -84,11 +90,13 @@ A web application built with **Next.js 16 (Turbopack)**, **TypeScript**, and **T
 
 ### Local Python Environment
 
+**Clean-checkout audit:** To regenerate report matrices without downloads, run `python scripts/build_evaluation_matrix_report.py` then `python scripts/build_evaluation_matrix_report.py --check`. These commands verify archived artifacts, not a fresh external benchmark.
+
 ```bash
 # 1. Activate environment
 .venv\Scripts\activate  # On Linux/macOS: source .venv/bin/activate
 
-# 2. Run the complete automated test suite (64 tests)
+# 2. Run the available tests (some integration tests require BEIR datasets and Qdrant)
 pytest -v
 
 # 3. Audit scientific integrity & BEIR splits (Priority 1)
@@ -150,6 +158,7 @@ docker compose up --build
 - [`reports/generative_evaluation_authenticity_audit.md`](reports/generative_evaluation_authenticity_audit.md): Forensic investigation and provenance audit of mock generator versus neural inference.
 - [`reports/real_llm_generation_evaluation.md`](reports/real_llm_generation_evaluation.md): Authentic neural generation benchmark using Dockerized Qwen 2.5 0.5B under resource limits.
 - [`reports/scientific_integrity_audit.md`](reports/scientific_integrity_audit.md): Forensic audit of `task-197`, BEIR splits, and non-inferiority classifications.
-- [`results/canonical_results_registry.json`](results/canonical_results_registry.json): Cryptographically signed results registry.
+- [`results/canonical_results_registry.json`](results/canonical_results_registry.json): Archived canonical registry with SHA-256 dataset checksums (not a cryptographically signed attestation; SciFact D50 mismatch disclosed).
+- [`reports/EVALUATION_MATRIX_REPORT.md`](reports/EVALUATION_MATRIX_REPORT.md): Regenerated evaluation matrix and consistency report.
 
 **Licensing:** RAGScaleBench code is licensed under the **MIT License**. Upstream BEIR benchmark datasets (SciFact, NFCorpus, FiQA) remain subject to their original distribution terms.

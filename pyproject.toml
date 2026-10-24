@@ -9,7 +9,7 @@ description = "Production-grade research benchmark for retrieval-augmented gener
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
-    { name = "EDISS Research Team", email = "research@ediss.eu" }
+    { name = "RAGScaleBench contributors" }
 ]
 dependencies = [
     "fastapi>=0.115.0",

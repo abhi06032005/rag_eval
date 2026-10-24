@@ -6,8 +6,8 @@
 - **Name:** RAGScaleBench
 - **Version:** 0.2.0 (Phase 4 — Research-Grade Validation)
 - **Purpose:** Systematic empirical evaluation of retrieval quality, vector quantisation degradation, indexing memory footprint, and query latency across approximate nearest neighbor (ANN) vector databases in production RAG serving architectures.
-- **Context:** EDISS (European Master in Engineering of Data-Intensive Software Systems) Systems Research Portfolio.
-- **Repository:** [`d:/ragscalebench`](file:///d:/ragscalebench)
+- **Context:** Reproducible information-retrieval and RAG systems research.
+- **Repository:** [RAGScaleBench source](https://github.com/abhi06032005/rag_eval)
 
 ---
 

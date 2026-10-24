@@ -18,14 +18,27 @@ This guide provides deterministic, step-by-step instructions to reproduce all em
 
 ```bash
 # Clone the repository
-git clone https://github.com/ragscalebench/ragscalebench.git
-cd ragscalebench
+git clone https://github.com/abhi06032005/rag_eval.git
+cd rag_eval
 
 # Create virtual environment and install dependencies
 uv venv  # or python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -e .
 ```
+
+---
+
+## 2A. Offline archival report verification
+
+Run these commands in a clean checkout using Python 3.11+; they do not require BEIR downloads or LLM inference:
+
+```bash
+python scripts/build_evaluation_matrix_report.py
+python scripts/build_evaluation_matrix_report.py --check
+```
+
+See reports/EVALUATION_MATRIX_REPORT.md. Full neural/BEIR reproduction requires external datasets, indexes and model runtime; this report verifies stored evidence rather than rerunning measurements.
 
 ---
 

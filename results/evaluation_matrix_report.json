@@ -1,0 +1,261 @@
+{
+  "report_type": "historical_artifact_audit_not_fresh_full_benchmark",
+  "generated": "2026-10-24",
+  "source_data_reembedded": false,
+  "new_llm_inference": false,
+  "fresh_qdrant_benchmark": false,
+  "datasets": {
+    "scifact": {
+      "BM25": {
+        "nDCG@10": 0.6432,
+        "Recall@10": 0.7605,
+        "MRR": 0.614
+      },
+      "Dense_Exact": {
+        "nDCG@10": 0.6451,
+        "Recall@10": 0.7833,
+        "MRR": 0.611
+      },
+      "Fixed_Hybrid": {
+        "nDCG@10": 0.6799,
+        "Recall@10": 0.8104,
+        "MRR": 0.6452
+      },
+      "Adaptive_Router": {
+        "nDCG@10": 0.6861,
+        "Recall@10": 0.8093,
+        "MRR": 0.6541
+      }
+    },
+    "nfcorpus": {
+      "BM25": {
+        "nDCG@10": 0.2934,
+        "Recall@10": 0.1396,
+        "MRR": 0.5079
+      },
+      "Dense_Exact": {
+        "nDCG@10": 0.3181,
+        "Recall@10": 0.155,
+        "MRR": 0.5112
+      },
+      "Fixed_Hybrid": {
+        "nDCG@10": 0.3312,
+        "Recall@10": 0.1584,
+        "MRR": 0.5442
+      },
+      "Adaptive_Router": {
+        "nDCG@10": 0.3211,
+        "Recall@10": 0.1545,
+        "MRR": 0.5385
+      }
+    },
+    "fiqa": {
+      "BM25": {
+        "nDCG@10": 0.2247,
+        "Recall@10": 0.2843,
+        "MRR": 0.2898
+      },
+      "Dense_Exact": {
+        "nDCG@10": 0.3532,
+        "Recall@10": 0.4133,
+        "MRR": 0.4382
+      },
+      "Fixed_Hybrid": {
+        "nDCG@10": 0.33,
+        "Recall@10": 0.4113,
+        "MRR": 0.4085
+      },
+      "Adaptive_Router": {
+        "nDCG@10": 0.3216,
+        "Recall@10": 0.4006,
+        "MRR": 0.4007
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "dataset": "scifact",
+      "system_a": "Fixed_Hybrid",
+      "system_b": "Adaptive_Router",
+      "a": 0.6799,
+      "b": 0.6861,
+      "delta": -0.0062,
+      "ci95": [
+        -0.0168,
+        0.0034
+      ],
+      "p": 0.2214,
+      "queries": 300
+    },
+    {
+      "dataset": "nfcorpus",
+      "system_a": "Fixed_Hybrid",
+      "system_b": "Adaptive_Router",
+      "a": 0.3312,
+      "b": 0.3211,
+      "delta": 0.0101,
+      "ci95": [
+        0.0026,
+        0.0182
+      ],
+      "p": 0.0056,
+      "queries": 323
+    },
+    {
+      "dataset": "fiqa",
+      "system_a": "Dense_Exact",
+      "system_b": "Fixed_Hybrid",
+      "a": 0.3532,
+      "b": 0.33,
+      "delta": 0.0233,
+      "ci95": [
+        0.0024,
+        0.0444
+      ],
+      "p": 0.0296,
+      "queries": 648
+    },
+    {
+      "dataset": "fiqa",
+      "system_a": "Dense_Exact",
+      "system_b": "Adaptive_Router",
+      "a": 0.3532,
+      "b": 0.3216,
+      "delta": 0.0316,
+      "ci95": [
+        0.0099,
+        0.0537
+      ],
+      "p": 0.0034,
+      "queries": 648
+    }
+  ],
+  "generation": [
+    {
+      "generator": "mock-generator",
+      "mode": "mock",
+      "n": 20,
+      "f1": 0.3243,
+      "faithfulness": 0.625,
+      "citation_support": 1.0,
+      "abstention": 1.0,
+      "latency_ms": 0.01
+    },
+    {
+      "generator": "qwen2.5:0.5b",
+      "mode": "neural",
+      "n": 10,
+      "f1": 0.3791,
+      "faithfulness": null,
+      "citation_support": null,
+      "abstention": 1.0,
+      "latency_ms": 11443.84
+    }
+  ],
+  "ann": [
+    {
+      "config": "Standard HNSW",
+      "recall10": 0.78,
+      "ann_recall10": 0.9967,
+      "ndcg10": 0.6417,
+      "p50_ms": 14.54
+    },
+    {
+      "config": "Tuned HNSW",
+      "recall10": 0.7833,
+      "ann_recall10": 0.999,
+      "ndcg10": 0.6451,
+      "p50_ms": 16.1
+    },
+    {
+      "config": "Scalar INT8 + rescore",
+      "recall10": 0.7833,
+      "ann_recall10": 0.996,
+      "ndcg10": 0.6451,
+      "p50_ms": 23.74
+    },
+    {
+      "config": "Binary 1-bit + rescore",
+      "recall10": 0.7817,
+      "ann_recall10": 0.9767,
+      "ndcg10": 0.6446,
+      "p50_ms": 16.29
+    }
+  ],
+  "load": [
+    {
+      "concurrency": 1,
+      "queries": 100,
+      "p50_ms": 3.98,
+      "p95_ms": 4.41,
+      "p99_ms": 5.03,
+      "throughput_rps": 244.3,
+      "errors": 0,
+      "error_rate": 0.0
+    },
+    {
+      "concurrency": 2,
+      "queries": 100,
+      "p50_ms": 5.53,
+      "p95_ms": 6.3,
+      "p99_ms": 6.45,
+      "throughput_rps": 353.6,
+      "errors": 0,
+      "error_rate": 0.0
+    },
+    {
+      "concurrency": 5,
+      "queries": 100,
+      "p50_ms": 11.49,
+      "p95_ms": 13.75,
+      "p99_ms": 14.61,
+      "throughput_rps": 421.3,
+      "errors": 0,
+      "error_rate": 0.0
+    },
+    {
+      "concurrency": 10,
+      "queries": 100,
+      "p50_ms": 21.93,
+      "p95_ms": 31.51,
+      "p99_ms": 36.57,
+      "throughput_rps": 415.9,
+      "errors": 0,
+      "error_rate": 0.0
+    },
+    {
+      "concurrency": 20,
+      "queries": 100,
+      "p50_ms": 36.56,
+      "p95_ms": 63.37,
+      "p99_ms": 70.96,
+      "throughput_rps": 401.3,
+      "errors": 0,
+      "error_rate": 0.0
+    }
+  ],
+  "runtime": {
+    "Total Latency p50 (ms)": {
+      "Metric / Component": "Total Latency p50 (ms)",
+      "Fixed_Hybrid": 43.74,
+      "Adaptive_Router": 34.0,
+      "Delta (Adaptive vs Hybrid)": "-9.75 ms (-22.3%)"
+    },
+    "Total Latency p95 (ms)": {
+      "Metric / Component": "Total Latency p95 (ms)",
+      "Fixed_Hybrid": 72.31,
+      "Adaptive_Router": 70.69,
+      "Delta (Adaptive vs Hybrid)": "-1.62 ms (-2.2%)"
+    },
+    "Total Latency p99 (ms)": {
+      "Metric / Component": "Total Latency p99 (ms)",
+      "Fixed_Hybrid": 88.55,
+      "Adaptive_Router": 101.23,
+      "Delta (Adaptive vs Hybrid)": "--12.68 ms"
+    }
+  },
+  "issues": [
+    "SciFact D50 Fixed Hybrid nDCG@10: registry=0.6851, matched bootstrap=0.6799; unresolved until source rankings are independently re-evaluated.",
+    "SciFact D50 Fixed Hybrid Recall@10: registry=0.8254, matched bootstrap=0.8104; unresolved until source rankings are independently re-evaluated."
+  ]
+}
