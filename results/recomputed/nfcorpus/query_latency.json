@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "nfcorpus",
+    "system": "BM25",
+    "candidate_depth": 250,
+    "n": 323,
+    "p50_ms": 0.5424999999377178,
+    "p95_ms": 9.266990000287473,
+    "p99_ms": 11.967457999671744,
+    "serial_query_qps": 399.2937815732483,
+    "actual_neural_calls": 0,
+    "process_rss_bytes": 632586240,
+    "metrics": {
+      "Recall@1": 0.04753428084456727,
+      "Precision@1": 0.42724458204334365,
+      "Recall@5": 0.10834418036359127,
+      "Precision@5": 0.27492260061919505,
+      "Recall@10": 0.13964722737121152,
+      "Precision@10": 0.21207430340557276,
+      "nDCG@10": 0.29372453586792774,
+      "binary_nDCG@10": 0.29340899425437994,
+      "MRR@10": 0.504609563123495
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "nfcorpus",
+    "system": "Dense_Exact",
+    "candidate_depth": 250,
+    "n": 323,
+    "p50_ms": 19.210200000088662,
+    "p95_ms": 25.96877999967546,
+    "p99_ms": 28.98116000025766,
+    "serial_query_qps": 50.50190371078215,
+    "actual_neural_calls": 323,
+    "process_rss_bytes": 632586240,
+    "metrics": {
+      "Recall@1": 0.04389680498894225,
+      "Precision@1": 0.42105263157894735,
+      "Recall@5": 0.11965315421231895,
+      "Precision@5": 0.303405572755418,
+      "Recall@10": 0.15498797328057845,
+      "Precision@10": 0.24334365325077406,
+      "nDCG@10": 0.31667312754717797,
+      "binary_nDCG@10": 0.31842084174707025,
+      "MRR@10": 0.5076539387684899
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "nfcorpus",
+    "system": "Fixed_Hybrid",
+    "candidate_depth": 250,
+    "n": 323,
+    "p50_ms": 21.27959999961604,
+    "p95_ms": 34.1635299999325,
+    "p99_ms": 38.30035400089398,
+    "serial_query_qps": 44.284371750370546,
+    "actual_neural_calls": 323,
+    "process_rss_bytes": 632586240,
+    "metrics": {
+      "Recall@1": 0.051678195904375786,
+      "Precision@1": 0.4582043343653251,
+      "Recall@5": 0.12524147686092166,
+      "Precision@5": 0.31207430340557274,
+      "Recall@10": 0.15844361674340032,
+      "Precision@10": 0.24365325077399383,
+      "nDCG@10": 0.33008830842755943,
+      "binary_nDCG@10": 0.33127062359264436,
+      "MRR@10": 0.5379232394712271
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "nfcorpus",
+    "system": "Adaptive_Router",
+    "candidate_depth": 250,
+    "n": 323,
+    "p50_ms": 20.4807999998593,
+    "p95_ms": 33.53333000086422,
+    "p99_ms": 38.028338000221986,
+    "serial_query_qps": 49.21902961898565,
+    "actual_neural_calls": 284,
+    "process_rss_bytes": 632586240,
+    "metrics": {
+      "Recall@1": 0.05229739095081542,
+      "Precision@1": 0.4613003095975232,
+      "Recall@5": 0.12377827892676407,
+      "Precision@5": 0.30526315789473685,
+      "Recall@10": 0.15764462352815556,
+      "Precision@10": 0.24024767801857588,
+      "nDCG@10": 0.32746983474670216,
+      "binary_nDCG@10": 0.3283743723354961,
+      "MRR@10": 0.539888938031353
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  }
+]

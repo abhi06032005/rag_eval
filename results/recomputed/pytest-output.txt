@@ -1,0 +1,132 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.15, pytest-9.1.1, pluggy-1.7.0 -- D:\ragscalebench\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\ragscalebench
+configfile: pyproject.toml
+plugins: anyio-4.15.1, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 68 items
+
+tests/unit/test_bootstrap.py::test_paired_bootstrap_identical_systems PASSED [  1%]
+tests/unit/test_bootstrap.py::test_paired_bootstrap_significant_superiority PASSED [  2%]
+tests/unit/test_bootstrap.py::test_paired_bootstrap_regressions_tracked PASSED [  4%]
+tests/unit/test_bootstrap.py::test_non_inferiority_procedure PASSED      [  5%]
+tests/unit/test_bootstrap.py::test_multiple_comparison_corrections PASSED [  7%]
+tests/unit/test_chunking.py::test_chunk_boundaries_and_offsets FAILED    [  8%]
+tests/unit/test_chunking.py::test_token_limit_enforcement FAILED         [ 10%]
+tests/unit/test_chunking.py::test_overlap_validation PASSED              [ 11%]
+tests/unit/test_chunking.py::test_multisentence_overlap_progress FAILED  [ 13%]
+tests/unit/test_embeddings.py::test_embedding_dimensionality PASSED      [ 14%]
+tests/unit/test_embeddings.py::test_embedding_normalisation PASSED       [ 16%]
+tests/unit/test_generators.py::test_generator_factory PASSED             [ 17%]
+tests/unit/test_generators.py::test_mock_generator_execution_and_streaming PASSED [ 19%]
+tests/unit/test_generators.py::test_mock_generator_abstention_on_empty_context PASSED [ 20%]
+tests/unit/test_generators.py::test_prompt_injection_sanitization PASSED [ 22%]
+tests/unit/test_generators.py::test_is_abstention_detection PASSED       [ 23%]
+tests/unit/test_generators.py::test_ollama_generator_no_silent_fallback_on_unreachable_endpoint PASSED [ 25%]
+tests/unit/test_generators.py::test_openai_generator_no_silent_fallback_on_unreachable_endpoint PASSED [ 26%]
+tests/unit/test_generators.py::test_list_generator_providers PASSED      [ 27%]
+tests/unit/test_ids.py::test_stable_doc_ids PASSED                       [ 29%]
+tests/unit/test_ids.py::test_stable_chunk_ids PASSED                     [ 30%]
+tests/unit/test_ids.py::test_qa_id_formatting PASSED                     [ 32%]
+tests/unit/test_ids.py::test_content_sha256 PASSED                       [ 33%]
+tests/unit/test_ids.py::test_compute_run_id PASSED                       [ 35%]
+tests/unit/test_lexical_metrics.py::test_exact_match_known_examples PASSED [ 36%]
+tests/unit/test_lexical_metrics.py::test_token_f1_known_examples PASSED  [ 38%]
+tests/unit/test_lexical_metrics.py::test_faithfulness_and_entailment PASSED [ 39%]
+tests/unit/test_phase4_scifact.py::test_tokenize_text PASSED             [ 41%]
+tests/unit/test_phase4_scifact.py::test_bm25_ranking_accuracy PASSED     [ 42%]
+tests/unit/test_phase4_scifact.py::test_rrf_fusion_behavior PASSED       [ 44%]
+tests/unit/test_phase4_scifact.py::test_scifact_dataset_integrity PASSED [ 45%]
+tests/unit/test_phase4_scifact.py::test_govinfo_xml_extraction PASSED    [ 47%]
+tests/unit/test_provenance.py::test_core_sources_licence_allowed PASSED  [ 48%]
+tests/unit/test_provenance.py::test_un_permission_refusal PASSED         [ 50%]
+tests/unit/test_provenance.py::test_empty_document_rejection PASSED      [ 51%]
+tests/unit/test_qa_labels.py::test_dynamic_evidence_span_to_chunk_mapping PASSED [ 52%]
+tests/unit/test_qdrant_config.py::test_qdrant_quantization_translation PASSED [ 54%]
+tests/unit/test_qdrant_config.py::test_qdrant_distance_mapping PASSED    [ 55%]
+tests/unit/test_reevaluation.py::test_graded_ndcg_and_precision_denominator PASSED [ 57%]
+tests/unit/test_reevaluation.py::test_duplicate_ranking_rejected PASSED  [ 58%]
+tests/unit/test_reevaluation.py::test_explicit_candidate_depth_independent_of_return_cutoff[FixedHybridPolicy] PASSED [ 60%]
+tests/unit/test_reevaluation.py::test_explicit_candidate_depth_independent_of_return_cutoff[AdaptiveRouterPolicy] PASSED [ 61%]
+tests/unit/test_retrieval_metrics.py::test_recall_at_k_known_examples PASSED [ 63%]
+tests/unit/test_retrieval_metrics.py::test_hit_at_k_known_examples PASSED [ 64%]
+tests/unit/test_retrieval_metrics.py::test_mrr_known_examples PASSED     [ 66%]
+tests/unit/test_retrieval_metrics.py::test_ann_recall_known_examples PASSED [ 67%]
+tests/unit/test_retrieval_policies.py::test_bm25_policy PASSED           [ 69%]
+tests/unit/test_retrieval_policies.py::test_dense_policy PASSED          [ 70%]
+tests/unit/test_retrieval_policies.py::test_fixed_hybrid_policy PASSED   [ 72%]
+tests/unit/test_retrieval_policies.py::test_adaptive_router_lexical_route PASSED [ 73%]
+tests/unit/test_retrieval_policies.py::test_adaptive_router_dense_dominance PASSED [ 75%]
+tests/unit/test_retrieval_policies.py::test_adaptive_router_hybrid_fallback PASSED [ 76%]
+tests/unit/test_state_atomic.py::test_config_hashing_stability PASSED    [ 77%]
+tests/unit/test_state_atomic.py::test_atomic_csv_append_and_resume FAILED [ 79%]
+tests/unit/test_threshold_calibration.py::test_calibrate_dev_q05_gold PASSED [ 80%]
+tests/unit/test_threshold_calibration.py::test_calibrate_dev_max_f1 PASSED [ 82%]
+Timeout (0:00:30)!
+Thread 0x00005c7c (most recent call first):
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 294 in accept
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socket.py", line 625 in _fallback_socketpair
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 784 in _make_self_pipe
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 639 in __init__
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\windows_events.py", line 315 in __init__
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\events.py", line 699 in new_event_loop
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\events.py", line 810 in new_event_loop
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\runners.py", line 137 in _lazy_init
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\runners.py", line 59 in __enter__
+  File "D:\ragscalebench\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2547 in run
+  File "D:\ragscalebench\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 83 in run
+  File "D:\ragscalebench\.venv\Lib\site-packages\anyio\from_thread.py", line 538 in run_blocking_portal
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 982 in run
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00005f88 (most recent call first):
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 327 in wait
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 451 in result
+  File "D:\ragscalebench\.venv\Lib\site-packages\anyio\from_thread.py", line 554 in start_blocking_portal
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 137 in __enter__
+  File "D:\ragscalebench\.venv\Lib\site-packages\starlette\testclient.py", line 490 in _portal_factory
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 137 in __enter__
+  File "C:\Users\devda\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\contextlib.py", line 517 in enter_context
+  File "D:\ragscalebench\.venv\Lib\site-packages\starlette\testclient.py", line 406 in handle_request
+  File "D:\ragscalebench\.venv\Lib\site-packages\httpx2\_client.py", line 1075 in _send_single_request
+  File "D:\ragscalebench\.venv\Lib\site-packages\httpx2\_client.py", line 1042 in _send_handling_redirects
+  File "D:\ragscalebench\.venv\Lib\site-packages\httpx2\_client.py", line 1007 in _send_handling_auth
+  File "D:\ragscalebench\.venv\Lib\site-packages\httpx2\_client.py", line 979 in send
+  File "D:\ragscalebench\.venv\Lib\site-packages\httpx2\_client.py", line 796 in request
+  File "D:\ragscalebench\.venv\Lib\site-packages\starlette\testclient.py", line 518 in request
+  File "D:\ragscalebench\.venv\Lib\site-packages\httpx2\_client.py", line 1112 in get
+  File "D:\ragscalebench\tests\integration\test_api_integration.py", line 35 in test_healthz_and_readyz
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\python.py", line 167 in pytest_pyfunc_call
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_execution.py", line 147 in _multicall
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_manager.py", line 183 in _hookexec
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_caller.py", line 197 in __call__
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\python.py", line 1707 in runtest
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\runner.py", line 184 in pytest_runtest_call
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_execution.py", line 147 in _multicall
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_manager.py", line 183 in _hookexec
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_caller.py", line 197 in __call__
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\runner.py", line 250 in <lambda>
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\runner.py", line 361 in from_call
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\runner.py", line 249 in call_and_report
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\runner.py", line 139 in runtestprotocol
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\runner.py", line 118 in pytest_runtest_protocol
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_execution.py", line 147 in _multicall
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_manager.py", line 183 in _hookexec
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_caller.py", line 197 in __call__
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\main.py", line 408 in pytest_runtestloop
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_execution.py", line 147 in _multicall
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_manager.py", line 183 in _hookexec
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_caller.py", line 197 in __call__
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\main.py", line 384 in _main
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\main.py", line 330 in wrap_session
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\main.py", line 377 in pytest_cmdline_main
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_execution.py", line 147 in _multicall
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_manager.py", line 183 in _hookexec
+  File "D:\ragscalebench\.venv\Lib\site-packages\pluggy\_caller.py", line 197 in __call__
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\config\__init__.py", line 229 in _main
+  File "D:\ragscalebench\.venv\Lib\site-packages\_pytest\config\__init__.py", line 253 in _console_main
+  File "D:\ragscalebench\.venv\Lib\site-packages\pytest\__main__.py", line 9 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main

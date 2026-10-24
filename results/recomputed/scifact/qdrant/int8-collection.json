@@ -1,0 +1,72 @@
+{
+  "status": "green",
+  "optimizer_status": "ok",
+  "warnings": null,
+  "indexed_vectors_count": 5183,
+  "points_count": 5183,
+  "segments_count": 2,
+  "config": {
+    "params": {
+      "vectors": {
+        "size": 384,
+        "distance": "Cosine",
+        "hnsw_config": null,
+        "quantization_config": null,
+        "on_disk": null,
+        "memory": null,
+        "datatype": null,
+        "multivector_config": null
+      },
+      "shard_number": 1,
+      "sharding_method": null,
+      "replication_factor": 1,
+      "write_consistency_factor": 1,
+      "read_fan_out_factor": null,
+      "read_fan_out_delay_ms": null,
+      "on_disk_payload": true,
+      "payload": null,
+      "sparse_vectors": null
+    },
+    "hnsw_config": {
+      "m": 32,
+      "ef_construct": 200,
+      "full_scan_threshold": 10,
+      "max_indexing_threads": 2,
+      "on_disk": false,
+      "memory": null,
+      "payload_m": null,
+      "inline_storage": null
+    },
+    "optimizer_config": {
+      "deleted_threshold": 0.2,
+      "vacuum_min_vector_number": 1000,
+      "default_segment_number": 1,
+      "max_segment_size": null,
+      "memmap_threshold": null,
+      "indexing_threshold": 10,
+      "flush_interval_sec": 5,
+      "max_optimization_threads": 1,
+      "prevent_unoptimized": null
+    },
+    "wal_config": {
+      "wal_capacity_mb": 32,
+      "wal_segments_ahead": 0,
+      "wal_retain_closed": 1
+    },
+    "quantization_config": {
+      "scalar": {
+        "type": "int8",
+        "quantile": 0.99,
+        "always_ram": true,
+        "memory": null
+      }
+    },
+    "strict_mode_config": null,
+    "metadata": null
+  },
+  "payload_schema": {},
+  "update_queue": {
+    "length": 0,
+    "deferred_points": null
+  }
+}

@@ -1,0 +1,8 @@
+
+--- Calibrating Adaptive Router on Independent Training Set (809 queries) ---
+Calibrating on 809 independent training queries...
+Calibration Result: tau_lexical_margin=0.2, tau_min_idf=5.0 (Dev Coverage=44.6%)
+
+--- Calibrating Adaptive Router on Independent Training Set (809 queries) ---
+Calibrating on 807 independent training queries...
+Calibration Result: tau_lexical_margin=0.2, tau_min_idf=5.0 (Dev Coverage=44.6%)

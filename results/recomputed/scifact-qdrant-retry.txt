@@ -1,0 +1,8 @@
+scifact hnsw_ef32_rescoreFalse 0.9756666666666667
+scifact hnsw_ef128_rescoreFalse 0.9976666666666667
+scifact hnsw_tuned_ef32_rescoreFalse 0.9846666666666668
+scifact hnsw_tuned_ef128_rescoreFalse 0.9993333333333334
+scifact int8_ef128_rescoreFalse 0.9813333333333335
+scifact int8_ef128_rescoreTrue 0.9986666666666667
+scifact binary_ef128_rescoreFalse 0.5616666666666666
+scifact binary_ef128_rescoreTrue 0.7383333333333333

@@ -48,3 +48,6 @@ data/beir/
 *.log
 .DS_Store
 Thumbs.db
+
+# Rebuilt serialized lexical indexes (regenerate with the audit runner)
+results/recomputed/**/*.pkl

@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "fiqa",
+    "system": "BM25",
+    "candidate_depth": 250,
+    "n": 648,
+    "p50_ms": 129.07330000052752,
+    "p95_ms": 250.61066999842288,
+    "p99_ms": 299.54811799882003,
+    "serial_query_qps": 7.637056210651099,
+    "actual_neural_calls": 0,
+    "process_rss_bytes": 968630272,
+    "metrics": {
+      "Recall@1": 0.10134776488943156,
+      "Precision@1": 0.21141975308641975,
+      "Recall@5": 0.22440474049270345,
+      "Precision@5": 0.09660493827160493,
+      "Recall@10": 0.28425251874325946,
+      "Precision@10": 0.06373456790123457,
+      "nDCG@10": 0.22467531176136646,
+      "binary_nDCG@10": 0.22467531176136646,
+      "MRR@10": 0.28124938761512835
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "fiqa",
+    "system": "Dense_Exact",
+    "candidate_depth": 250,
+    "n": 648,
+    "p50_ms": 23.333749999437714,
+    "p95_ms": 26.329659999464635,
+    "p99_ms": 28.760564998847258,
+    "serial_query_qps": 42.53446102020744,
+    "actual_neural_calls": 648,
+    "process_rss_bytes": 968630272,
+    "metrics": {
+      "Recall@1": 0.1714028127222572,
+      "Precision@1": 0.3472222222222222,
+      "Recall@5": 0.36705632758873497,
+      "Precision@5": 0.16759259259259257,
+      "Recall@10": 0.44130556086574607,
+      "Precision@10": 0.10447530864197531,
+      "nDCG@10": 0.36867136984071575,
+      "binary_nDCG@10": 0.36867136984071575,
+      "MRR@10": 0.44512235449735443
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "fiqa",
+    "system": "Fixed_Hybrid",
+    "candidate_depth": 250,
+    "n": 648,
+    "p50_ms": 154.48260000084701,
+    "p95_ms": 273.51893500144797,
+    "p99_ms": 312.09338100230514,
+    "serial_query_qps": 6.475015190130939,
+    "actual_neural_calls": 648,
+    "process_rss_bytes": 968630272,
+    "metrics": {
+      "Recall@1": 0.1527685534629979,
+      "Precision@1": 0.3132716049382716,
+      "Recall@5": 0.3317146844924623,
+      "Precision@5": 0.1478395061728395,
+      "Recall@10": 0.4197394212440509,
+      "Precision@10": 0.09567901234567901,
+      "nDCG@10": 0.33835935557039404,
+      "binary_nDCG@10": 0.33835935557039404,
+      "MRR@10": 0.41122256515775024
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "fiqa",
+    "system": "Adaptive_Router",
+    "candidate_depth": 250,
+    "n": 648,
+    "p50_ms": 151.7272500004765,
+    "p95_ms": 279.3581700010691,
+    "p99_ms": 310.972502999939,
+    "serial_query_qps": 6.48543780612685,
+    "actual_neural_calls": 627,
+    "process_rss_bytes": 968630272,
+    "metrics": {
+      "Recall@1": 0.1535401584012695,
+      "Precision@1": 0.3148148148148148,
+      "Recall@5": 0.33042867626200956,
+      "Precision@5": 0.14753086419753086,
+      "Recall@10": 0.4158813965526929,
+      "Precision@10": 0.09521604938271604,
+      "nDCG@10": 0.3371818026723925,
+      "binary_nDCG@10": 0.3371818026723925,
+      "MRR@10": 0.4116665441896923
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  }
+]

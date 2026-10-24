@@ -1,0 +1,8 @@
+nfcorpus hnsw_ef32_rescoreFalse 0.9216718266253872
+nfcorpus hnsw_ef128_rescoreFalse 0.9897832817337463
+nfcorpus hnsw_tuned_ef32_rescoreFalse 0.9461300309597523
+nfcorpus hnsw_tuned_ef128_rescoreFalse 0.9956656346749226
+nfcorpus int8_ef128_rescoreFalse 0.9835913312693498
+nfcorpus int8_ef128_rescoreTrue 0.9965944272445821
+nfcorpus binary_ef128_rescoreFalse 0.5266253869969041
+nfcorpus binary_ef128_rescoreTrue 0.6972136222910217

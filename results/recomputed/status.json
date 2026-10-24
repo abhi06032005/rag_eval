@@ -1,0 +1,13 @@
+{
+  "official_data_verification": "PASS",
+  "fresh_retrieval": "PASS",
+  "scifact_discrepancy": "PASS",
+  "real_qdrant": "PASS",
+  "unit_integration_tests": "PASS",
+  "default_turbopack_build": "FAIL",
+  "webpack_production_build": "PASS",
+  "new_end_to_end_generation": "BLOCKED",
+  "valid_claim_level_labels_and_judge": "BLOCKED",
+  "historical_claim_integrity": "FAIL",
+  "overall_full_objective": "BLOCKED"
+}

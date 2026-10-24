@@ -1,0 +1,1298 @@
+[
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "binary_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.06736112763936265,
+    "ci95": [
+      0.05210625978249277,
+      0.0829461317244186
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "binary_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.07262168558464854,
+    "ci95": [
+      0.05371664504477005,
+      0.09250290765047708
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "binary_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.022567367746309023,
+    "ci95": [
+      0.012517630924856417,
+      0.03343472333858123
+    ],
+    "p_centered_bootstrap": 0.00019998000199980003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0112,
+    "q_bh": 0.0008,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "binary_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.033065909570539204,
+    "ci95": [
+      0.016097459639126305,
+      0.05056616512345678
+    ],
+    "p_centered_bootstrap": 0.00029997000299970003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0159,
+    "q_bh": 0.0009,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.003634385539035658,
+    "ci95": [
+      -0.00021800458774664966,
+      0.009030126406475566
+    ],
+    "p_centered_bootstrap": 0.12458754124587541,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1693,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.004115226337448559,
+    "ci95": [
+      -0.0005144032921810699,
+      0.0102880658436214
+    ],
+    "p_centered_bootstrap": 0.13788621137886212,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1838,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.012190509049485404,
+    "ci95": [
+      0.005202404100453287,
+      0.020633990087966056
+    ],
+    "p_centered_bootstrap": 0.0030996900309969004,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.1209,
+    "q_bh": 0.0066,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.01610082304526749,
+    "ci95": [
+      0.007355967078189302,
+      0.0264917695473251
+    ],
+    "p_centered_bootstrap": 0.0010998900109989002,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0484,
+    "q_bh": 0.0027,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.0015375753119674929,
+    "ci95": [
+      -1.6903693727151232e-05,
+      0.004629629629629629
+    ],
+    "p_centered_bootstrap": 0.5884411558844116,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.6053,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.0015432098765432098,
+    "ci95": [
+      0.0,
+      0.004629629629629629
+    ],
+    "p_centered_bootstrap": 0.5641435856414359,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.5941,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.005514271403431821,
+    "ci95": [
+      0.000881239639227516,
+      0.011286193568835833
+    ],
+    "p_centered_bootstrap": 0.036196380361963806,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.0621,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.005941358024691358,
+    "ci95": [
+      -0.0007458847736625514,
+      0.01329732510288066
+    ],
+    "p_centered_bootstrap": 0.09549045095490451,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1375,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.0007232948495768328,
+    "ci95": [
+      -0.001242136819045776,
+      0.0026006175882909866
+    ],
+    "p_centered_bootstrap": 0.45665433456654336,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.4982,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0019705603038936374,
+    "ci95": [
+      -0.007475071225071225,
+      0.0025205761316872428
+    ],
+    "p_centered_bootstrap": 0.43395660433956607,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.4882,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.00021560197951234935,
+    "ci95": [
+      -0.0006405434241982292,
+      0.0
+    ],
+    "p_centered_bootstrap": 0.26047395260473954,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.3025,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "Dense_Exact",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0005144032921810699,
+    "ci95": [
+      -0.0015432098765432098,
+      0.0
+    ],
+    "p_centered_bootstrap": 0.6252374762523748,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.634,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "binary_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.044793759893053633,
+    "ci95": [
+      -0.05651010313920706,
+      -0.03323829749040606
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "binary_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.039555776014109346,
+    "ci95": [
+      -0.05285755621693121,
+      -0.027053525499706056
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.063726742100327,
+    "ci95": [
+      -0.07929096680339412,
+      -0.04832282766819445
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.06850645924719997,
+    "ci95": [
+      -0.08826018396041543,
+      -0.050016222310782496
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.055170618589877256,
+    "ci95": [
+      -0.07038783295492149,
+      -0.040067495524470365
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.056520862539381066,
+    "ci95": [
+      -0.07596632684016942,
+      -0.03808630198676496
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.06582355232739516,
+    "ci95": [
+      -0.08109313602886022,
+      -0.05073251549174777
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.07107847570810533,
+    "ci95": [
+      -0.0906934646286498,
+      -0.05259660842415473
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.06184685623593083,
+    "ci95": [
+      -0.07667428515609381,
+      -0.04761137594567771
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.06668032755995719,
+    "ci95": [
+      -0.08542946551048404,
+      -0.04930523876415081
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.06663783278978581,
+    "ci95": [
+      -0.08223626475815098,
+      -0.0514912666576335
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.07459224588854219,
+    "ci95": [
+      -0.09468235596707819,
+      -0.05535700978119959
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.06757672961887501,
+    "ci95": [
+      -0.08313403845212688,
+      -0.05222432761005732
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.07313608887682961,
+    "ci95": [
+      -0.09297553216245345,
+      -0.054251307677233615
+    ],
+    "p_centered_bootstrap": 9.999000099990002e-05,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0072,
+    "q_bh": 0.0004,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.018932982207273366,
+    "ci95": [
+      -0.029606823615367754,
+      -0.008932569871689966
+    ],
+    "p_centered_bootstrap": 0.0007999200079992001,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0368,
+    "q_bh": 0.0021,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.028950683233090645,
+    "ci95": [
+      -0.046039160599345784,
+      -0.012218858816081049
+    ],
+    "p_centered_bootstrap": 0.0008999100089991,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0405,
+    "q_bh": 0.0023,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.01037685869682362,
+    "ci95": [
+      -0.02064110550260721,
+      -0.0005636595064801142
+    ],
+    "p_centered_bootstrap": 0.0430956904309569,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.0722,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.01696508652527171,
+    "ci95": [
+      -0.033944830246913575,
+      -0.00011126444286166745
+    ],
+    "p_centered_bootstrap": 0.049595040495950406,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.0812,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.021029792434341534,
+    "ci95": [
+      -0.031403896869392205,
+      -0.0115964823980436
+    ],
+    "p_centered_bootstrap": 0.00019998000199980003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0112,
+    "q_bh": 0.0008,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.031522699693995994,
+    "ci95": [
+      -0.0485943105676902,
+      -0.014808920610425262
+    ],
+    "p_centered_bootstrap": 0.00029997000299970003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0159,
+    "q_bh": 0.0009,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.017053096342877203,
+    "ci95": [
+      -0.02661796430616651,
+      -0.008315251412858923
+    ],
+    "p_centered_bootstrap": 0.0004999500049995,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.024,
+    "q_bh": 0.0014,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.02712455154584784,
+    "ci95": [
+      -0.043306862997256515,
+      -0.011446396538989132
+    ],
+    "p_centered_bootstrap": 0.0012998700129987,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0559,
+    "q_bh": 0.0031,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.021844072896732195,
+    "ci95": [
+      -0.032841363783305065,
+      -0.011799901923805988
+    ],
+    "p_centered_bootstrap": 0.00029997000299970003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0159,
+    "q_bh": 0.0009,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.03503646987443284,
+    "ci95": [
+      -0.05241494209665506,
+      -0.018179399796876654
+    ],
+    "p_centered_bootstrap": 0.00029997000299970003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0159,
+    "q_bh": 0.0009,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.022782969725821375,
+    "ci95": [
+      -0.033678410342776764,
+      -0.01280544452873018
+    ],
+    "p_centered_bootstrap": 0.00019998000199980003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0112,
+    "q_bh": 0.0008,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "binary_ef128_rescoreTrue",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.03358031286272028,
+    "ci95": [
+      -0.05095439122348845,
+      -0.0165920369710879
+    ],
+    "p_centered_bootstrap": 0.00029997000299970003,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0159,
+    "q_bh": 0.0009,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.008556123510449747,
+    "ci95": [
+      0.0029510822719465224,
+      0.015404129372804796
+    ],
+    "p_centered_bootstrap": 0.0081991800819918,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.287,
+    "q_bh": 0.0155,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "hnsw_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.01198559670781893,
+    "ci95": [
+      0.004681069958847737,
+      0.020576131687242795
+    ],
+    "p_centered_bootstrap": 0.0046995300469953,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.1739,
+    "q_bh": 0.0094,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0020968102270681652,
+    "ci95": [
+      -0.00595483491842619,
+      0.0004360091754932993
+    ],
+    "p_centered_bootstrap": 0.2536746325367463,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.2994,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.00257201646090535,
+    "ci95": [
+      -0.007716049382716049,
+      0.0010288065843621398
+    ],
+    "p_centered_bootstrap": 0.21937806219378062,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.2771,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.0018798858643961636,
+    "ci95": [
+      -0.003094667749843984,
+      0.006966748670355753
+    ],
+    "p_centered_bootstrap": 0.44845515448455153,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.4968,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.0018261316872427984,
+    "ci95": [
+      -0.004732510288065843,
+      0.008180298353909446
+    ],
+    "p_centered_bootstrap": 0.5693430656934306,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.5941,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.002911090689458825,
+    "ci95": [
+      -0.00848329771759394,
+      0.0013469011248064147
+    ],
+    "p_centered_bootstrap": 0.23407659234076592,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.2857,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.006085786641342197,
+    "ci95": [
+      -0.013801836024058246,
+      0.00039569484013928457
+    ],
+    "p_centered_bootstrap": 0.08739126087391261,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1311,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0038499875185480066,
+    "ci95": [
+      -0.009247990130107827,
+      8.037172810017394e-06
+    ],
+    "p_centered_bootstrap": 0.10718928107189281,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1513,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.004629629629629629,
+    "ci95": [
+      -0.010802469135802469,
+      0.0
+    ],
+    "p_centered_bootstrap": 0.11388861113888611,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1577,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.010652933737517911,
+    "ci95": [
+      -0.01835116071745008,
+      -0.004209236807302375
+    ],
+    "p_centered_bootstrap": 0.0044995500449955,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.171,
+    "q_bh": 0.0093,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "hnsw_tuned_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.01455761316872428,
+    "ci95": [
+      -0.02420267489711934,
+      -0.0062493569958847845
+    ],
+    "p_centered_bootstrap": 0.001999800019998,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.082,
+    "q_bh": 0.0045,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.006676237646053582,
+    "ci95": [
+      -0.013120374612714064,
+      -0.0015147624469157986
+    ],
+    "p_centered_bootstrap": 0.025097490250974904,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.8282,
+    "q_bh": 0.0452,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.010159465020576132,
+    "ci95": [
+      -0.018775720164609055,
+      -0.0029578189300411522
+    ],
+    "p_centered_bootstrap": 0.0117988201179882,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.4012,
+    "q_bh": 0.0218,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.01146721419990857,
+    "ci95": [
+      -0.020077109295860335,
+      -0.004045929060580621
+    ],
+    "p_centered_bootstrap": 0.006199380061993801,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.2232,
+    "q_bh": 0.0121,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.018071383349161127,
+    "ci95": [
+      -0.029337062757201646,
+      -0.008255925530231089
+    ],
+    "p_centered_bootstrap": 0.0016998300169983002,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0714,
+    "q_bh": 0.0039,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.012406111028997753,
+    "ci95": [
+      -0.02084210805308523,
+      -0.005381464953689641
+    ],
+    "p_centered_bootstrap": 0.0025997400259974,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.104,
+    "q_bh": 0.0057,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.01661522633744856,
+    "ci95": [
+      -0.026903292181069953,
+      -0.007973251028806583
+    ],
+    "p_centered_bootstrap": 0.0006999300069993001,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.0329,
+    "q_bh": 0.0019,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": 0.003976696091464328,
+    "ci95": [
+      0.0002724271957986279,
+      0.008622860530847888
+    ],
+    "p_centered_bootstrap": 0.05909409059094091,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.0946,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef128_rescoreFalse",
+    "b": "hnsw_tuned_ef32_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.004398148148148148,
+    "ci95": [
+      -0.0015432098765432098,
+      0.010982510288065845
+    ],
+    "p_centered_bootstrap": 0.1695830416958304,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.222,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0008142804623906597,
+    "ci95": [
+      -0.0048650964011226665,
+      0.002145283455473033
+    ],
+    "p_centered_bootstrap": 0.6606339366063394,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.6606,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0035137701804368476,
+    "ci95": [
+      -0.009825102880658437,
+      0.0015788224121557456
+    ],
+    "p_centered_bootstrap": 0.23277672232776722,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.2857,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.001753177291479842,
+    "ci95": [
+      -0.005060833588654328,
+      5.634564575717077e-06
+    ],
+    "p_centered_bootstrap": 0.17588241175882413,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.2261,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0020576131687242796,
+    "ci95": [
+      -0.005658436213991769,
+      0.0
+    ],
+    "p_centered_bootstrap": 0.24627537246275372,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.2955,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0047909765538549885,
+    "ci95": [
+      -0.010929244092819944,
+      0.00024083512923560492
+    ],
+    "p_centered_bootstrap": 0.0908909109089091,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1336,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreFalse",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.007911918328584996,
+    "ci95": [
+      -0.017094017094017092,
+      0.00025720164609053473
+    ],
+    "p_centered_bootstrap": 0.07219278072192781,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1106,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.00572987338294417,
+    "ci95": [
+      -0.011472385557052857,
+      -0.0010477404071070158
+    ],
+    "p_centered_bootstrap": 0.0301969803019698,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 0.9663,
+    "q_bh": 0.053,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "hnsw_tuned_ef32_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0064557613168724284,
+    "ci95": [
+      -0.013888888888888888,
+      0.000257201646090535
+    ],
+    "p_centered_bootstrap": 0.071992800719928,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.1106,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "int8_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "nDCG@10",
+    "n": 648,
+    "delta_a_minus_b": -0.0009388968290891822,
+    "ci95": [
+      -0.00281327923696743,
+      0.0010279026555996289
+    ],
+    "p_centered_bootstrap": 0.3217678232176782,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.3677,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 10,
+    "a": "int8_ef128_rescoreFalse",
+    "b": "int8_ef128_rescoreTrue",
+    "metric": "Recall@10",
+    "n": 648,
+    "delta_a_minus_b": 0.0014561570117125674,
+    "ci95": [
+      -0.0029321976891421337,
+      0.006837606837606838
+    ],
+    "p_centered_bootstrap": 0.5561443855614439,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 0.5941,
+    "family": "all systems x depths x two metrics within dataset"
+  }
+]

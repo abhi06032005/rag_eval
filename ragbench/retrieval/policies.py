@@ -161,11 +161,15 @@ class FixedHybridPolicy(RetrievalPolicy):
         dense_search_fn: Callable[[np.ndarray, int], list[tuple[str, float]]],
         embed_query_fn: Callable[[str], np.ndarray] | None = None,
         k_rrf: int = 60,
+        candidate_depth: int | None = None,
     ):
         self.bm25 = bm25_engine
         self.dense_search_fn = dense_search_fn
         self.embed_query_fn = embed_query_fn
         self.k_rrf = k_rrf
+        if candidate_depth is not None and candidate_depth < 10:
+            raise ValueError("candidate_depth must be at least 10")
+        self.candidate_depth = candidate_depth
 
     def retrieve(
         self,
@@ -175,7 +179,10 @@ class FixedHybridPolicy(RetrievalPolicy):
     ) -> RetrievalResult:
         t0 = time.perf_counter()
         t_bm = time.perf_counter()
-        bm25_hits = self.bm25.search(query_text, top_k=max(top_k * 5, 50))
+        depth = self.candidate_depth if self.candidate_depth is not None else max(top_k * 5, 50)
+        if depth < top_k:
+            raise ValueError("candidate_depth must be >= top_k")
+        bm25_hits = self.bm25.search(query_text, top_k=depth)
         bm25_ms = (time.perf_counter() - t_bm) * 1000.0
 
         emb_ms = 0.0
@@ -192,7 +199,7 @@ class FixedHybridPolicy(RetrievalPolicy):
             neural_calls = 1
 
         t_dense = time.perf_counter()
-        dense_hits = self.dense_search_fn(query_vec, max(top_k * 5, 50))
+        dense_hits = self.dense_search_fn(query_vec, depth)
         dense_ms = (time.perf_counter() - t_dense) * 1000.0
 
         t_rrf = time.perf_counter()
@@ -244,11 +251,15 @@ class AdaptiveRouterPolicy(RetrievalPolicy):
         dense_search_fn: Callable[[np.ndarray, int], list[tuple[str, float]]],
         thresholds: AdaptiveThresholds | None = None,
         embed_query_fn: Callable[[str], np.ndarray] | None = None,
+        candidate_depth: int | None = None,
     ):
         self.bm25 = bm25_engine
         self.dense_search_fn = dense_search_fn
         self.embed_query_fn = embed_query_fn
         self.cfg = thresholds or AdaptiveThresholds()
+        if candidate_depth is not None and candidate_depth < 10:
+            raise ValueError("candidate_depth must be at least 10")
+        self.candidate_depth = candidate_depth
 
     def extract_lexical_signals(self, query_text: str) -> dict[str, float]:
         tokens = tokenize_text(query_text)
@@ -277,7 +288,10 @@ class AdaptiveRouterPolicy(RetrievalPolicy):
 
         # 1. First-stage lexical probe (fast inverted index lookup)
         t_bm = time.perf_counter()
-        bm25_hits = self.bm25.search(query_text, top_k=max(top_k * 5, 50))
+        depth = self.candidate_depth if self.candidate_depth is not None else max(top_k * 5, 50)
+        if depth < top_k:
+            raise ValueError("candidate_depth must be >= top_k")
+        bm25_hits = self.bm25.search(query_text, top_k=depth)
         bm25_ms = (time.perf_counter() - t_bm) * 1000.0
 
         bm25_top_score = bm25_hits[0][1] if bm25_hits else 0.0
@@ -335,7 +349,7 @@ class AdaptiveRouterPolicy(RetrievalPolicy):
             neural_calls = 1
 
         t_dense = time.perf_counter()
-        dense_hits = self.dense_search_fn(query_vec, max(top_k * 5, 50))
+        dense_hits = self.dense_search_fn(query_vec, depth)
         dense_ms = (time.perf_counter() - t_dense) * 1000.0
 
         dense_top_score = dense_hits[0][1] if dense_hits else 0.0
