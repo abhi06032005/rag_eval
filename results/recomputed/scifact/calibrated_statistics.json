@@ -1,0 +1,218 @@
+[
+  {
+    "depth": 250,
+    "a": "RRF_k60",
+    "b": "Router_deduplicated_calibration",
+    "metric": "nDCG@10",
+    "n": 300,
+    "delta_a_minus_b": -0.006249138707399693,
+    "ci95": [
+      -0.016950893246722845,
+      0.003517117558279138
+    ],
+    "p_centered_bootstrap": 0.22797720227977203,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "RRF_k60",
+    "b": "Router_deduplicated_calibration",
+    "metric": "Recall@10",
+    "n": 300,
+    "delta_a_minus_b": 0.001111111111111111,
+    "ci95": [
+      -0.015,
+      0.01611111111111111
+    ],
+    "p_centered_bootstrap": 0.8806119388061194,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "RRF_k60",
+    "b": "Router_fixed_defaults",
+    "metric": "nDCG@10",
+    "n": 300,
+    "delta_a_minus_b": -0.003314003526336086,
+    "ci95": [
+      -0.010960877467375965,
+      0.0032647300778300384
+    ],
+    "p_centered_bootstrap": 0.3601639836016398,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "RRF_k60",
+    "b": "Router_fixed_defaults",
+    "metric": "Recall@10",
+    "n": 300,
+    "delta_a_minus_b": 0.0016666666666666668,
+    "ci95": [
+      -0.011666666666666667,
+      0.015
+    ],
+    "p_centered_bootstrap": 0.8149185081491851,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "RRF_k60",
+    "b": "Router_historical",
+    "metric": "nDCG@10",
+    "n": 300,
+    "delta_a_minus_b": -0.006249138707399693,
+    "ci95": [
+      -0.016950893246722845,
+      0.003517117558279138
+    ],
+    "p_centered_bootstrap": 0.22797720227977203,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "RRF_k60",
+    "b": "Router_historical",
+    "metric": "Recall@10",
+    "n": 300,
+    "delta_a_minus_b": 0.001111111111111111,
+    "ci95": [
+      -0.015,
+      0.01611111111111111
+    ],
+    "p_centered_bootstrap": 0.8806119388061194,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "Router_deduplicated_calibration",
+    "b": "Router_fixed_defaults",
+    "metric": "nDCG@10",
+    "n": 300,
+    "delta_a_minus_b": 0.0029351351810636083,
+    "ci95": [
+      -0.0041815888051653805,
+      0.010818838511791731
+    ],
+    "p_centered_bootstrap": 0.43965603439656037,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "Router_deduplicated_calibration",
+    "b": "Router_fixed_defaults",
+    "metric": "Recall@10",
+    "n": 300,
+    "delta_a_minus_b": 0.0005555555555555558,
+    "ci95": [
+      -0.0061111111111111106,
+      0.009444444444444445
+    ],
+    "p_centered_bootstrap": 0.902009799020098,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "Router_deduplicated_calibration",
+    "b": "Router_historical",
+    "metric": "nDCG@10",
+    "n": 300,
+    "delta_a_minus_b": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "p_centered_bootstrap": 1.0,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "Router_deduplicated_calibration",
+    "b": "Router_historical",
+    "metric": "Recall@10",
+    "n": 300,
+    "delta_a_minus_b": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "p_centered_bootstrap": 1.0,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "Router_fixed_defaults",
+    "b": "Router_historical",
+    "metric": "nDCG@10",
+    "n": 300,
+    "delta_a_minus_b": -0.0029351351810636083,
+    "ci95": [
+      -0.010818838511791733,
+      0.004181588805165378
+    ],
+    "p_centered_bootstrap": 0.43965603439656037,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  },
+  {
+    "depth": 250,
+    "a": "Router_fixed_defaults",
+    "b": "Router_historical",
+    "metric": "Recall@10",
+    "n": 300,
+    "delta_a_minus_b": -0.0005555555555555558,
+    "ci95": [
+      -0.009444444444444445,
+      0.0061111111111111106
+    ],
+    "p_centered_bootstrap": 0.902009799020098,
+    "resamples": 10000,
+    "seed": 42,
+    "p_holm": 1.0,
+    "q_bh": 1.0,
+    "family": "all systems x depths x two metrics within dataset"
+  }
+]

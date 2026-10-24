@@ -1,0 +1,9 @@
+storage:
+  storage_path: ./storage/recomputed-audit
+  hnsw_index:
+    max_indexing_threads: 2
+service:
+  host: 127.0.0.1
+  http_port: 6335
+  grpc_port: 6336
+telemetry_disabled: true

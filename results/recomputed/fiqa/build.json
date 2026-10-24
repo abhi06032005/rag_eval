@@ -1,0 +1,28 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "max_seq_length": 256,
+  "device": "cpu",
+  "threads": 2,
+  "seed": 42,
+  "corpus_encoding_seconds": 2270.0332067,
+  "query_encoding_seconds": 2.8799522000008437,
+  "bm25_build_seconds": 9.715338800000609,
+  "corpus_vectors_bytes": 88532096,
+  "bm25_pickle_bytes": 36395927,
+  "corpus_vectors_sha256": "126b77b2bc9017641e0b375454d50bb3bd628c8c344d3265868beda1d3865766",
+  "query_vectors_sha256": "14f741ee97a1c5cef560eb2f15616aad133b3eaeb68fcc412434d3f5d72238be",
+  "old_embedding_comparison": {
+    "ids_equal": true,
+    "shape_equal": true,
+    "max_abs_difference": 0.22524204850196838
+  },
+  "thresholds": {
+    "tau_lexical_margin": 0.28,
+    "tau_min_idf": 6.0,
+    "tau_dense_confident": 0.75,
+    "tau_bm25_weak": 8.0,
+    "k_rrf": 60
+  },
+  "process_peak_wset_bytes": 1432141824
+}

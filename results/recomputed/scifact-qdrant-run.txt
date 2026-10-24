@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ragscalebench\scripts\run_recomputed_qdrant.py", line 55, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',required=True);main(p.parse_args().dataset)
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ragscalebench\scripts\run_recomputed_qdrant.py", line 22, in main
+    client.create_collection(collection,vectors_config=m.VectorParams(size=vec.shape[1],distance=m.Distance.COSINE),hnsw_config=m.HnswConfigDiff(m=degree,ef_construct=efc,full_scan_threshold=1,max_indexing_threads=2),optimizers_config=m.OptimizersConfigDiff(indexing_threshold=1,default_segment_number=1,max_optimization_threads=1),quantization_config=quant)
+  File "D:\ragscalebench\.venv\Lib\site-packages\qdrant_client\qdrant_client.py", line 1760, in create_collection
+    return self._client.create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ragscalebench\.venv\Lib\site-packages\qdrant_client\qdrant_remote.py", line 2152, in create_collection
+    result: bool | None = self.http.collections_api.create_collection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ragscalebench\.venv\Lib\site-packages\qdrant_client\http\api\collections_api.py", line 451, in create_collection
+    return self._build_for_create_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ragscalebench\.venv\Lib\site-packages\qdrant_client\http\api\collections_api.py", line 96, in _build_for_create_collection
+    return self.api_client.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ragscalebench\.venv\Lib\site-packages\qdrant_client\http\api_client.py", line 98, in request
+    return self.send(request, type_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ragscalebench\.venv\Lib\site-packages\qdrant_client\http\api_client.py", line 133, in send
+    raise UnexpectedResponse.for_response(response)
+qdrant_client.http.exceptions.UnexpectedResponse: Unexpected Response: 422 (Unprocessable Entity)
+Raw response content:
+b'{"status":{"error":"Validation error in JSON body: [hnsw_config.full_scan_threshold: value 1 invalid, must be 10 or larger]"},"time":0.0}'

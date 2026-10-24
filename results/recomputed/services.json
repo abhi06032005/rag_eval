@@ -1,0 +1,8 @@
+{
+  "http://127.0.0.1:11434/api/tags": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+  "http://127.0.0.1:6335": {
+    "title": "qdrant - vector search engine",
+    "version": "1.19.2",
+    "commit": "016542aa5deb6c66380bb137badf73d54f742bde"
+  }
+}

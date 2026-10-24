@@ -1,6 +1,8 @@
-# RAGScaleBench Empirical Systems Research Report
+# RAGScaleBench Empirical Systems Research Report (Archived Prototype)
+
+> Historical small-corpus report, not the 2026 BEIR reevaluation. For current evidence and corrected metrics, see [Full BEIR Reevaluation](../reports/FULL_BEIR_REEVALUATION.md).
 **Project:** RAGScaleBench: A Reproducible Benchmark of Retrieval Quality, Memory, Latency, Quantisation and Load Saturation in Production RAG Systems  
-**Programme / Portfolio:** European Master in Dependable Intelligent Software Systems (EDISS)  
+**Research area:** Information retrieval and RAG systems engineering  
 **Execution Date:** 2026-10-21T17:55:42.894268+00:00  
 **Corpus Scale:** 50 core canonical documents (146 processed vector chunks)
 

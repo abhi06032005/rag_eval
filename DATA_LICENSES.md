@@ -41,3 +41,14 @@ This project incorporates the following open-source libraries:
 - **PyTorch**: Modified BSD License, © Meta Platforms, Inc. & PyTorch Contributors
 - **Pydantic**: MIT License, © Samuel Colvin
 - **Tiktoken**: MIT License, © OpenAI
+## Official BEIR evaluation datasets (independent audit, 2026-10-24)
+
+The retrieval audit uses the official BEIR archive distribution, without generating or replacing judgments:
+
+| Dataset | Archive | BEIR dataset card / declared license |
+|---|---|---|
+| SciFact | https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/scifact.zip | https://huggingface.co/datasets/BeIR/scifact — CC BY-SA 4.0 |
+| NFCorpus | https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/nfcorpus.zip | https://huggingface.co/datasets/BeIR/nfcorpus — CC BY-SA 4.0 |
+| FiQA | https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/fiqa.zip | https://huggingface.co/datasets/BeIR/fiqa — CC BY-SA 4.0 |
+
+Source: [BEIR dataset catalog](https://github.com/beir-cellar/beir#beers-available-datasets). The licenses above are the BEIR cards' declarations, not an independent legal determination about every underlying article or forum post. Preserve original attribution and consult upstream terms before redistribution. The audit commits document IDs, ranks, scores, hashes and aggregates, rather than republishing the downloaded corpora. Archive MD5 values come from BEIR; SHA-256 values are independently computed and pinned after verified HTTPS acquisition. See `results/recomputed/dataset_verification.json` for split inventories and file hashes. Earlier broad licensing statements in this document are historical claims outside this BEIR audit's scope.

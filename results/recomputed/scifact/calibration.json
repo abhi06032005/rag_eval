@@ -1,0 +1,24 @@
+{
+  "source_split": "train",
+  "historical_thresholds": {
+    "tau_lexical_margin": 0.2,
+    "tau_min_idf": 5.0,
+    "tau_dense_confident": 0.75,
+    "tau_bm25_weak": 8.0,
+    "k_rrf": 60
+  },
+  "deduplicated_thresholds": {
+    "tau_lexical_margin": 0.2,
+    "tau_min_idf": 5.0,
+    "tau_dense_confident": 0.75,
+    "tau_bm25_weak": 8.0,
+    "k_rrf": 60
+  },
+  "queries_in_split": 809,
+  "removed_query_ids": [
+    "1291",
+    "871"
+  ],
+  "fiqa_legacy_limit": null,
+  "qualification": "Original calibration selection replay; descriptive, not a preregistered confirmatory analysis. FiQA code uses first 300 dev qrels queries, despite earlier report claiming 500."
+}

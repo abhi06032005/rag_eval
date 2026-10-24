@@ -1,0 +1,8 @@
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 103/103 [00:00<00:00, 1886.29it/s]
+scifact rebuilding embeddings 5183
+scifact embedding complete 310.22613009999986
+scifact depth 50 complete
+scifact depth 100 complete
+scifact depth 250 complete

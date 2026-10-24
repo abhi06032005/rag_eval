@@ -1,0 +1,8 @@
+
+--- Calibrating Adaptive Router on NFCorpus Dev Set ---
+Calibrating on 324 independent development queries...
+NFCorpus Calibration: tau_margin=0.15, tau_min_idf=4.0 (Dev Coverage=31.1%)
+
+--- Calibrating Adaptive Router on NFCorpus Dev Set ---
+Calibrating on 323 independent development queries...
+NFCorpus Calibration: tau_margin=0.15, tau_min_idf=4.0 (Dev Coverage=31.2%)

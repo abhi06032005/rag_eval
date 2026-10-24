@@ -1,0 +1,170 @@
+{
+  "new_neural_generation": "BLOCKED",
+  "missing_dependencies": [
+    "No responsive Ollama model endpoint at 127.0.0.1:11434; Docker daemon unavailable",
+    "BEIR retrieval qrels are not answer-quality, claim-support, or abstention labels; validated answer/claim annotation set and judge are absent"
+  ],
+  "archive_sha256": "b4d9b7e2ef4185911cc934469a44e06a8ab976bcf3af115ceaf8a1902cd4b7ee",
+  "model": "qwen2.5:0.5b",
+  "archived_cases": 10,
+  "answerable_cases": 5,
+  "token_f1_against_script_authored_reference": 0.37911058638331363,
+  "explicit_citation_presence_rate": 0.0,
+  "unanswerable_fixture_abstention_rate": 1.0,
+  "faithfulness": null,
+  "citation_entailment_support": null,
+  "unsupported_claim_rate": null,
+  "human_review": false,
+  "confusion_matrix": null,
+  "confusion_matrix_reason": "No validated classification labels/predictions supplied for scientific reporting",
+  "per_case": [
+    {
+      "id": "gen-sci-01",
+      "category": "answerable",
+      "token_f1_recomputed": 0.5714285714285714,
+      "token_f1_archived": 0.5714,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "scifact:147",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-sci-02",
+      "category": "answerable",
+      "token_f1_recomputed": 0.5,
+      "token_f1_archived": 0.5,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "scifact:412",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-sci-03",
+      "category": "answerable",
+      "token_f1_recomputed": 0.2479338842975206,
+      "token_f1_archived": 0.2479,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "arxiv:2401.01123",
+          "exists_in_official_corpus": null
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-abstain-01",
+      "category": "unanswerable",
+      "token_f1_recomputed": 1.0,
+      "token_f1_archived": 1.0,
+      "bracket_citations": [],
+      "abstained_string_detector": true,
+      "fixture_source_checks": [],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-abstain-02",
+      "category": "unanswerable",
+      "token_f1_recomputed": 1.0,
+      "token_f1_archived": 1.0,
+      "bracket_citations": [],
+      "abstained_string_detector": true,
+      "fixture_source_checks": [],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-ambig-01",
+      "category": "ambiguous",
+      "token_f1_recomputed": 0.21621621621621623,
+      "token_f1_archived": 0.2162,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "nfcorpus:MED-9999",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-multi-01",
+      "category": "multi_doc",
+      "token_f1_recomputed": 0.3142857142857143,
+      "token_f1_archived": 0.3143,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "scifact:4387784-A",
+          "exists_in_official_corpus": false
+        },
+        {
+          "source_id": "scifact:4387784-B",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-conflict-01",
+      "category": "conflicting",
+      "token_f1_recomputed": 0.2619047619047619,
+      "token_f1_archived": 0.2619,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "nfcorpus:CLIN-2017",
+          "exists_in_official_corpus": false
+        },
+        {
+          "source_id": "nfcorpus:CLIN-2022",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-inject-01",
+      "category": "prompt_injection",
+      "token_f1_recomputed": 0.16129032258064518,
+      "token_f1_archived": 0.1613,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "nfcorpus:MED-SALT",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    },
+    {
+      "id": "gen-inject-02",
+      "category": "prompt_injection",
+      "token_f1_recomputed": 0.5833333333333334,
+      "token_f1_archived": 0.5833,
+      "bracket_citations": [],
+      "abstained_string_detector": false,
+      "fixture_source_checks": [
+        {
+          "source_id": "nfcorpus:MED-TEA",
+          "exists_in_official_corpus": false
+        }
+      ],
+      "evidence": "ARCHIVED_OUTPUT_RECOMPUTATION; script-authored reference and supplied context, not end-to-end retrieval"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "dataset": "scifact",
+    "system": "BM25",
+    "candidate_depth": 250,
+    "n": 300,
+    "p50_ms": 15.491250000195578,
+    "p95_ms": 34.42843499942683,
+    "p99_ms": 42.11601599834464,
+    "serial_query_qps": 59.74782950595887,
+    "actual_neural_calls": 0,
+    "process_rss_bytes": 642920448,
+    "metrics": {
+      "Recall@1": 0.515,
+      "Precision@1": 0.5266666666666666,
+      "Recall@5": 0.7027777777777777,
+      "Precision@5": 0.15066666666666664,
+      "Recall@10": 0.7605000000000001,
+      "Precision@10": 0.08366666666666665,
+      "nDCG@10": 0.6432266073554275,
+      "binary_nDCG@10": 0.6432266073554275,
+      "MRR@10": 0.6095251322751323
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "scifact",
+    "system": "Dense_Exact",
+    "candidate_depth": 250,
+    "n": 300,
+    "p50_ms": 24.66699999968114,
+    "p95_ms": 34.99116999983016,
+    "p99_ms": 39.06057199887072,
+    "serial_query_qps": 38.765196683972604,
+    "actual_neural_calls": 300,
+    "process_rss_bytes": 642920448,
+    "metrics": {
+      "Recall@1": 0.4823333333333333,
+      "Precision@1": 0.5033333333333333,
+      "Recall@5": 0.7379444444444444,
+      "Precision@5": 0.16399999999999995,
+      "Recall@10": 0.7833333333333333,
+      "Precision@10": 0.08833333333333332,
+      "nDCG@10": 0.6450816521455774,
+      "binary_nDCG@10": 0.6450816521455774,
+      "MRR@10": 0.6047248677248678
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "scifact",
+    "system": "Fixed_Hybrid",
+    "candidate_depth": 250,
+    "n": 300,
+    "p50_ms": 40.91340000013588,
+    "p95_ms": 70.14205500081516,
+    "p99_ms": 79.05093900018977,
+    "serial_query_qps": 23.27937882049933,
+    "actual_neural_calls": 300,
+    "process_rss_bytes": 642920448,
+    "metrics": {
+      "Recall@1": 0.5298333333333333,
+      "Precision@1": 0.5466666666666666,
+      "Recall@5": 0.7325555555555556,
+      "Precision@5": 0.16066666666666665,
+      "Recall@10": 0.8103888888888889,
+      "Precision@10": 0.09099999999999998,
+      "nDCG@10": 0.6798740045107492,
+      "binary_nDCG@10": 0.6798740045107492,
+      "MRR@10": 0.6427830687830688
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  },
+  {
+    "dataset": "scifact",
+    "system": "Adaptive_Router",
+    "candidate_depth": 250,
+    "n": 300,
+    "p50_ms": 35.47359999993205,
+    "p95_ms": 65.48970000112605,
+    "p99_ms": 81.51919900135907,
+    "serial_query_qps": 27.90573435491262,
+    "actual_neural_calls": 212,
+    "process_rss_bytes": 642920448,
+    "metrics": {
+      "Recall@1": 0.5398333333333333,
+      "Precision@1": 0.5566666666666666,
+      "Recall@5": 0.7342222222222222,
+      "Precision@5": 0.16066666666666662,
+      "Recall@10": 0.8087222222222222,
+      "Precision@10": 0.09066666666666666,
+      "nDCG@10": 0.6831880080370853,
+      "binary_nDCG@10": 0.6831880080370853,
+      "MRR@10": 0.6481997354497354
+    },
+    "scope": "NEW_EXECUTION; query embedding + local retrieval/fusion; no HTTP or generation; one warm serial pass, rotating policy order, no embedding cache"
+  }
+]

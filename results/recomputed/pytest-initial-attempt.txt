@@ -1,0 +1,1 @@
+Initial unrestricted pytest attempt interrupted after stalled collection; no test result claimed. Retried with explicit offline fixture mode.

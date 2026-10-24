@@ -1,0 +1,22 @@
+{
+  "query_embedding_max_abs_difference": 9.406358003616333e-08,
+  "queries_with_different_float_vectors": 5,
+  "exact_top10_changed_query_ids": [],
+  "metrics": {
+    "archive_vectors_legacy_sort": {
+      "nDCG@10": 0.6450816521455774,
+      "binary_nDCG@10": 0.6450816521455774,
+      "Recall@10": 0.7833333333333333
+    },
+    "new_vectors_legacy_sort": {
+      "nDCG@10": 0.6450816521455774,
+      "binary_nDCG@10": 0.6450816521455774,
+      "Recall@10": 0.7833333333333333
+    },
+    "new_vectors_stable_sort": {
+      "nDCG@10": 0.6450816521455774,
+      "binary_nDCG@10": 0.6450816521455774,
+      "Recall@10": 0.7833333333333333
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "sources": {
+    "results\\scifact\\per_query_rankings.jsonl": "3a6f9d230bde6e34b3b5c63d8ee91a79f7e1a9adb5a16a9b99f6429a1a0ec840",
+    "results\\scifact\\corpus_embeddings.npy": "22deb8443419067246836317e71502e1924bbdcf19de00567038b85f18b5eb4c",
+    "results\\scifact\\query_embeddings.npy": "b7a4b1eba559da8dc61ce17738d1151d82f7076bdda2fbf2ad02679d4faf4bec",
+    "data\\beir\\scifact\\qrels\\test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+  },
+  "stored_branch_lengths": {
+    "BM25": [
+      50
+    ],
+    "Dense_Exact": [
+      50
+    ]
+  },
+  "reconstructed_top50_mismatch_queries": [],
+  "metrics": {
+    "stored_Hybrid_Exact_RRF_D100": {
+      "Recall@1": 0.5298333333333333,
+      "Precision@1": 0.5466666666666666,
+      "Recall@5": 0.7292222222222222,
+      "Precision@5": 0.15999999999999998,
+      "Recall@10": 0.8003888888888889,
+      "Precision@10": 0.09,
+      "nDCG@10": 0.6763405562112705,
+      "binary_nDCG@10": 0.6763405562112705,
+      "MRR@10": 0.6411230158730158,
+      "MRR@50": 0.6467084118984462
+    },
+    "refused_stored_branches_D50": {
+      "Recall@1": 0.5298333333333333,
+      "Precision@1": 0.5466666666666666,
+      "Recall@5": 0.7375555555555556,
+      "Precision@5": 0.1613333333333333,
+      "Recall@10": 0.825388888888889,
+      "Precision@10": 0.09233333333333334,
+      "nDCG@10": 0.6851393843808239,
+      "binary_nDCG@10": 0.6851393843808239,
+      "MRR@10": 0.6451693121693122,
+      "MRR@50": 0.6501405897404142
+    },
+    "reconstructed_branch_D50": {
+      "Recall@1": 0.5298333333333333,
+      "Precision@1": 0.5466666666666666,
+      "Recall@5": 0.7375555555555556,
+      "Precision@5": 0.1613333333333333,
+      "Recall@10": 0.825388888888889,
+      "Precision@10": 0.09233333333333334,
+      "nDCG@10": 0.6851393843808239,
+      "binary_nDCG@10": 0.6851393843808239,
+      "MRR@10": 0.6451693121693122,
+      "MRR@50": 0.6501405897404142
+    },
+    "reconstructed_branch_D100": {
+      "Recall@1": 0.5298333333333333,
+      "Precision@1": 0.5466666666666666,
+      "Recall@5": 0.7292222222222222,
+      "Precision@5": 0.15999999999999998,
+      "Recall@10": 0.8003888888888889,
+      "Precision@10": 0.09,
+      "nDCG@10": 0.6763405562112705,
+      "binary_nDCG@10": 0.6763405562112705,
+      "MRR@10": 0.6411230158730158,
+      "MRR@50": 0.6467084118984462
+    },
+    "reconstructed_branch_D250": {
+      "Recall@1": 0.5298333333333333,
+      "Precision@1": 0.5466666666666666,
+      "Recall@5": 0.7325555555555556,
+      "Precision@5": 0.16066666666666665,
+      "Recall@10": 0.8103888888888889,
+      "Precision@10": 0.09099999999999998,
+      "nDCG@10": 0.6798740045107492,
+      "binary_nDCG@10": 0.6798740045107492,
+      "MRR@10": 0.6427830687830688,
+      "MRR@50": 0.6479714035096057
+    }
+  },
+  "finding": "The old registry re-fused only 50 saved hits per branch, called this D50/top_k=50, and advertised 250 branch candidates. Actual Stage 2 top_k=50 requests 250 candidates. Returned cutoff alone cannot change the first 10 ranks. Do not reconstruct a 250-depth run from 50-depth lists."
+}
