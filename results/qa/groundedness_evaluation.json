@@ -1,0 +1,367 @@
+{
+  "summary": {
+    "num_evaluated": 25,
+    "mean_citation_precision": 1.0,
+    "mean_citation_recall": 1.0,
+    "mean_faithfulness": 0.781,
+    "evaluation_methodology": "Source citation extraction + context token containment check",
+    "llm_judge_limitations_acknowledged": [
+      "LLM judges exhibit verbosity bias, favoring longer, more detailed answers even when containing subtle hallucinations.",
+      "LLM judges demonstrate self-enhancement / family-preference bias toward models from the same architecture.",
+      "Automated citation matching measures source string occurrence, not semantic causal support of individual claims.",
+      "Scientific domain validation requires expert domain knowledge that generalist LLMs frequently hallucinate."
+    ]
+  },
+  "samples": [
+    {
+      "qa_id": "qa-test-0001",
+      "question": "According to study 'DISTA-LP: Privacy-Preserving Distributed Linear Programming ...",
+      "generated_answer": "Based on the provided evidence, Linear-programming (LP) mechanisms for metric differential privacy (mDP) enable fine-gra...",
+      "gold_doc_ids": [
+        "arxiv:2610.27615v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27615v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8537
+    },
+    {
+      "qa_id": "qa-test-0002",
+      "question": "According to study 'EchoNav: Evidential BEV Completion from Historical Observati...",
+      "generated_answer": "Based on the provided evidence, Visual navigation in cluttered environments requires robots to recover previously observ...",
+      "gold_doc_ids": [
+        "arxiv:2610.27616v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27616v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7857
+    },
+    {
+      "qa_id": "qa-test-0003",
+      "question": "According to study 'Provisioning Robust and Efficient LiDAR Perception for Auton...",
+      "generated_answer": "Based on the provided evidence, LiDAR-based 3D object detection is a core perception service for autonomous driving, but...",
+      "gold_doc_ids": [
+        "arxiv:2610.27617v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27617v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8529
+    },
+    {
+      "qa_id": "qa-test-0004",
+      "question": "According to study 'JARVIS: From Visual Manuals to Autonomous Robotic Assembly',...",
+      "generated_answer": "Based on the provided evidence, Visual manuals communicate procedural knowledge through stepwise diagrams, but translati...",
+      "gold_doc_ids": [
+        "arxiv:2610.27618v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27618v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7857
+    },
+    {
+      "qa_id": "qa-test-0005",
+      "question": "According to study 'Local Allow, Global Deny: Why Per-Action Authorization Does ...",
+      "generated_answer": "Based on the provided evidence, Autonomous LLM agents act through tools under per-action authorization: a local guard sc...",
+      "gold_doc_ids": [
+        "arxiv:2610.27620v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27620v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7778
+    },
+    {
+      "qa_id": "qa-test-0006",
+      "question": "According to study 'A Radiation-Hardened, Fault-Aware Quantized Neural Network T...",
+      "generated_answer": "Based on the provided evidence, Deep learning (DL) models are increasingly being deployed into radiation-challenging env...",
+      "gold_doc_ids": [
+        "arxiv:2610.27621v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27621v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8276
+    },
+    {
+      "qa_id": "qa-test-0007",
+      "question": "According to study 'A Head Camera Is (Almost) All You Need: An Electronics-Free ...",
+      "generated_answer": "Based on the provided evidence, Handheld demonstration devices decouple data collection from the robot, but conventional...",
+      "gold_doc_ids": [
+        "arxiv:2610.27622v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27622v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8824
+    },
+    {
+      "qa_id": "qa-test-0008",
+      "question": "According to study 'From Outcomes to Steps: Reliable Success-Aware Critic Learni...",
+      "generated_answer": "Based on the provided evidence, Reinforcement learning for long-horizon language agents requires identifying whether int...",
+      "gold_doc_ids": [
+        "arxiv:2610.27623v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27623v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8333
+    },
+    {
+      "qa_id": "qa-test-0009",
+      "question": "According to study 'TriGeoBench: A Multimodal Mathematical Geometry Benchmark wi...",
+      "generated_answer": "Based on the provided evidence, Multimodal Large Language Models show strong vision-language capabilities, yet their geo...",
+      "gold_doc_ids": [
+        "arxiv:2610.27626v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27626v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.75
+    },
+    {
+      "qa_id": "qa-test-0010",
+      "question": "According to study 'PAR: Progress-Aligned Recurrence for Length Generalization i...",
+      "generated_answer": "Based on the provided evidence, Looped language models can run more iterations at test time, but additional iterations n...",
+      "gold_doc_ids": [
+        "arxiv:2610.27628v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27628v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7778
+    },
+    {
+      "qa_id": "qa-test-0011",
+      "question": "According to study 'Minimum-Time Escape from the Conic Field of View of a Reeds-...",
+      "generated_answer": "Based on the provided evidence, We study minimum-time escape of an omnidirectional evader from the forward conic field o...",
+      "gold_doc_ids": [
+        "arxiv:2610.27629v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27629v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8
+    },
+    {
+      "qa_id": "qa-test-0012",
+      "question": "According to study 'A Two-Way Street: Surveying the Interplay between Code-Mixin...",
+      "generated_answer": "Based on the provided evidence, Systems for code-mixed (CM) text and speech rarely start from scratch. [arxiv:2610.27631...",
+      "gold_doc_ids": [
+        "arxiv:2610.27631v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27631v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7
+    },
+    {
+      "qa_id": "qa-test-0013",
+      "question": "According to study 'When Does Feedback Help? Auditing Learned Voltage-Clamp Expe...",
+      "generated_answer": "Based on the provided evidence, A learned scientific controller can outperform a misspecified planner without benefiting...",
+      "gold_doc_ids": [
+        "arxiv:2610.27632v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27632v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7
+    },
+    {
+      "qa_id": "qa-test-0014",
+      "question": "According to study 'Standards-Guided and Dependency-Aware Code-Level Documentati...",
+      "generated_answer": "Based on the provided evidence, Automatically generating high-quality documentation for software repositories remains ch...",
+      "gold_doc_ids": [
+        "arxiv:2610.27634v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27634v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8837
+    },
+    {
+      "qa_id": "qa-test-0015",
+      "question": "According to study 'CXLResume: Retained-State Checkpoint and Restore for In-Memo...",
+      "generated_answer": "Based on the provided evidence, Checkpointing and restoring an in-memory service typically require writing its memory pa...",
+      "gold_doc_ids": [
+        "arxiv:2610.27636v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27636v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7778
+    },
+    {
+      "qa_id": "qa-test-0016",
+      "question": "According to study 'SCODEL: Shared Canonical Ontology Definitions for Food Entit...",
+      "generated_answer": "Based on the provided evidence, Identifying recipe entities and linking them to ontology concepts is fundamental for sem...",
+      "gold_doc_ids": [
+        "arxiv:2610.27637v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27637v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7727
+    },
+    {
+      "qa_id": "qa-test-0017",
+      "question": "According to study 'Ensemble-Aware Structural Encoding (EASE): Conditioning Prot...",
+      "generated_answer": "Based on the provided evidence, Protein foundation models provide transferable representations for downstream peptide pr...",
+      "gold_doc_ids": [
+        "arxiv:2610.27638v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27638v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.6842
+    },
+    {
+      "qa_id": "qa-test-0018",
+      "question": "According to study 'BCT: Bayes-Consistent Tempering for Flow Language Models', w...",
+      "generated_answer": "Based on the provided evidence, Temperature scaling is typically applied as a post-hoc transformation of model probabili...",
+      "gold_doc_ids": [
+        "arxiv:2610.27641v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27641v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7143
+    },
+    {
+      "qa_id": "qa-test-0019",
+      "question": "According to study 'Secure Multimodal Federated Optimization via Hierarchical DN...",
+      "generated_answer": "Based on the provided evidence, Federated optimization over heterogeneous multimodal data enables distributed institutio...",
+      "gold_doc_ids": [
+        "arxiv:2610.27644v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27644v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8611
+    },
+    {
+      "qa_id": "qa-test-0020",
+      "question": "According to study 'CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Co...",
+      "generated_answer": "Based on the provided evidence, As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applicati...",
+      "gold_doc_ids": [
+        "arxiv:2610.27645v1"
+      ],
+      "cited_sources": [
+        "arxiv:2610.27645v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8286
+    },
+    {
+      "qa_id": "qa-test-0021",
+      "question": "In the context of 'Toronto Harbour Light', what factual principle is described?...",
+      "generated_answer": "Based on the provided evidence, The Toronto Harbour Light is an automated lighthouse at Vicki Keith Point on the Leslie ...",
+      "gold_doc_ids": [
+        "wikipedia:12782525"
+      ],
+      "cited_sources": [
+        "wikipedia:12782525"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7917
+    },
+    {
+      "qa_id": "qa-test-0022",
+      "question": "In the context of 'Backward inhibition', what factual principle is described?...",
+      "generated_answer": "Based on the provided evidence, In experimental psychology, backward inhibition, is a theory of sequential task control ...",
+      "gold_doc_ids": [
+        "wikipedia:14593032"
+      ],
+      "cited_sources": [
+        "wikipedia:14593032"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.8438
+    },
+    {
+      "qa_id": "qa-test-0023",
+      "question": "In the context of 'Swiss 1. Liga', what factual principle is described?...",
+      "generated_answer": "Based on the provided evidence, Swiss Promotion League or Swiss 1. [wikipedia:16923850]...",
+      "gold_doc_ids": [
+        "wikipedia:16923850"
+      ],
+      "cited_sources": [
+        "wikipedia:16923850"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.5833
+    },
+    {
+      "qa_id": "qa-test-0024",
+      "question": "In the context of 'Koulni\u00e9r\u00e9', what factual principle is described?...",
+      "generated_answer": "Based on the provided evidence, Koulni\u00e9r\u00e9 is a village in the Tikare Department of Bam Province in northern Burkina Faso...",
+      "gold_doc_ids": [
+        "wikipedia:17984055"
+      ],
+      "cited_sources": [
+        "wikipedia:17984055"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.75
+    },
+    {
+      "qa_id": "qa-test-0025",
+      "question": "In the context of 'Amma Rajinama', what factual principle is described?...",
+      "generated_answer": "Based on the provided evidence, It is a musical film with a film score composed by K. [wikipedia:29799271]...",
+      "gold_doc_ids": [
+        "wikipedia:29799271"
+      ],
+      "cited_sources": [
+        "wikipedia:29799271"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "faithfulness": 0.7059
+    }
+  ]
+}

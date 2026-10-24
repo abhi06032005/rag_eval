@@ -1,0 +1,114 @@
+services:
+  # 1. Primary Vector Database
+  qdrant:
+    image: qdrant/qdrant:v1.11.0
+    container_name: ragscalebench-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    environment:
+      - QDRANT__SERVICE__HTTP_PORT=6333
+      - QDRANT__SERVICE__GRPC_PORT=6334
+    healthcheck:
+      test: ["CMD-SHELL", "timeout 3 bash -c '</dev/tcp/localhost/6333' || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 3s
+
+  # 2. FastAPI Benchmark and Serving Layer
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ragscalebench-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+      - GENERATOR_BACKEND=${GENERATOR_BACKEND:-mock}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - VLLM_BASE_URL=http://vllm:8000/v1
+      - API_GENERATOR_BASE_URL=${API_GENERATOR_BASE_URL:-https://api.openai.com/v1}
+      - API_GENERATOR_API_KEY=${API_GENERATOR_API_KEY:-}
+      - EMBEDDING_DEVICE=cpu
+      - DEFAULT_EMBEDDING_MODEL=BAAI/bge-small-en-v1.5
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # 3. Next.js Research Web Platform & QA Playground
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: ragscalebench-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+
+
+  # 3. Local LLM Generator (Ollama Profile)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ragscalebench-ollama
+    restart: unless-stopped
+    profiles:
+      - ollama
+      - local
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # 4. High-Throughput GPU Generator (vLLM Profile)
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: ragscalebench-vllm
+    restart: unless-stopped
+    profiles:
+      - vllm
+      - gpu
+    ports:
+      - "8001:8000"
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN:-}
+    command: >
+      --model meta-llama/Llama-3.1-8B-Instruct
+      --dtype auto
+      --max-model-len 4096
+      --enforce-eager
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  qdrant_storage:
+    name: ragscalebench_qdrant_data
+  ollama_models:
+    name: ragscalebench_ollama_models

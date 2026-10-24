@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "3",
+    "type": "Hybrid_Worse_Than_BM25",
+    "query_text": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+    "bm25_ndcg": 1.0,
+    "dense_ndcg": 0.5,
+    "hybrid_ndcg": 0.6309297535714575,
+    "mechanism": "Dense branch retrieved irrelevant semantic distractors that diluted high-precision BM25 rank."
+  },
+  {
+    "query_id": "48",
+    "type": "Hybrid_Worse_Than_BM25",
+    "query_text": "A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",
+    "bm25_ndcg": 0.6309297535714575,
+    "dense_ndcg": 0.0,
+    "hybrid_ndcg": 0.43067655807339306,
+    "mechanism": "Dense branch retrieved irrelevant semantic distractors that diluted high-precision BM25 rank."
+  },
+  {
+    "query_id": "70",
+    "type": "Hybrid_Worse_Than_BM25",
+    "query_text": "Activation of PPM1D suppresses p53 function.",
+    "bm25_ndcg": 1.0,
+    "dense_ndcg": 0.0,
+    "hybrid_ndcg": 0.6240505200038379,
+    "mechanism": "Dense branch retrieved irrelevant semantic distractors that diluted high-precision BM25 rank."
+  },
+  {
+    "query_id": "128",
+    "type": "Hybrid_Worse_Than_BM25",
+    "query_text": "Arterioles have a larger lumen diameter than venules.",
+    "bm25_ndcg": 0.5,
+    "dense_ndcg": 0.0,
+    "hybrid_ndcg": 0.3333333333333333,
+    "mechanism": "Dense branch retrieved irrelevant semantic distractors that diluted high-precision BM25 rank."
+  },
+  {
+    "query_id": "198",
+    "type": "Hybrid_Worse_Than_BM25",
+    "query_text": "CCL19 is absent within dLNs.",
+    "bm25_ndcg": 0.6309297535714575,
+    "dense_ndcg": 0.0,
+    "hybrid_ndcg": 0.5,
+    "mechanism": "Dense branch retrieved irrelevant semantic distractors that diluted high-precision BM25 rank."
+  },
+  {
+    "query_id": "1",
+    "type": "Hybrid_Worse_Than_Dense",
+    "query_text": "0-dimensional biomaterials show inductive properties.",
+    "bm25_ndcg": 0.0,
+    "dense_ndcg": 0.38685280723454163,
+    "hybrid_ndcg": 0.0,
+    "mechanism": "BM25 retrieved zero relevant hits (vocabulary mismatch) while dense found gold at rank 1; RRF fusion demoted gold rank."
+  },
+  {
+    "query_id": "36",
+    "type": "Hybrid_Worse_Than_Dense",
+    "query_text": "A deficiency of vitamin B12 increases blood levels of homocysteine.",
+    "bm25_ndcg": 0.21840743681816419,
+    "dense_ndcg": 0.4911492931622974,
+    "hybrid_ndcg": 0.2640681225725909,
+    "mechanism": "BM25 retrieved zero relevant hits (vocabulary mismatch) while dense found gold at rank 1; RRF fusion demoted gold rank."
+  },
+  {
+    "query_id": "179",
+    "type": "Hybrid_Worse_Than_Dense",
+    "query_text": "Birth-weight is positively associated with breast cancer.",
+    "bm25_ndcg": 0.19519002499605084,
+    "dense_ndcg": 0.9558295932317544,
+    "hybrid_ndcg": 0.3764290720714305,
+    "mechanism": "BM25 retrieved zero relevant hits (vocabulary mismatch) while dense found gold at rank 1; RRF fusion demoted gold rank."
+  },
+  {
+    "query_id": "183",
+    "type": "Hybrid_Worse_Than_Dense",
+    "query_text": "Bone marrow cells contribute to adult macrophage compartments.",
+    "bm25_ndcg": 0.31546487678572877,
+    "dense_ndcg": 1.0,
+    "hybrid_ndcg": 0.6309297535714575,
+    "mechanism": "BM25 retrieved zero relevant hits (vocabulary mismatch) while dense found gold at rank 1; RRF fusion demoted gold rank."
+  },
+  {
+    "query_id": "232",
+    "type": "Hybrid_Worse_Than_Dense",
+    "query_text": "Cataract and trachoma are the primary cause of blindness in Southern Sudan.",
+    "bm25_ndcg": 0.6309297535714575,
+    "dense_ndcg": 1.0,
+    "hybrid_ndcg": 0.6309297535714575,
+    "mechanism": "BM25 retrieved zero relevant hits (vocabulary mismatch) while dense found gold at rank 1; RRF fusion demoted gold rank."
+  }
+]

@@ -1,0 +1,15 @@
+Metric / Component,Fixed_Hybrid,Adaptive_Router,Delta (Adaptive vs Hybrid)
+Total Queries Evaluated,300.0,300.0,0
+Neural Embedding Invocations,300.0,162.0,-138 (-46.0%)
+Qdrant / Vector Search Requests,300.0,162.0,-138 (-46.0%)
+Feature Extraction Mean Latency (ms),0.0,0.152,+0.152 ms (Router Overhead)
+BM25 Search Mean Latency (ms),15.302,16.816,1.515 ms
+Query Neural Embedding Mean Latency (ms),29.504,16.601,-12.903 ms (-43.7%)
+Dense Search Mean Latency (ms),1.075,0.65,-0.425 ms (-39.5%)
+RRF Fusion Mean Latency (ms),0.411,0.235,-0.176 ms
+Total Latency p50 (ms),43.74,34.0,-9.75 ms (-22.3%)
+Total Latency p95 (ms),72.31,70.69,-1.62 ms (-2.2%)
+Total Latency p99 (ms),88.55,101.23,--12.68 ms
+Mean Total Latency (ms),46.3,34.49,-11.81 ms (-25.5%)
+Throughput (queries/second),21.2,28.4,+7.2 q/s (+34.2%)
+Peak Memory RSS (MB),612.5,612.5,0.0 MB (Shared Process)

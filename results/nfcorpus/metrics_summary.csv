@@ -1,0 +1,5 @@
+Policy,Recall@10,nDCG@10,MRR
+BM25,0.1396,0.2934,0.5079
+Dense_Exact,0.155,0.3181,0.5112
+Fixed_Hybrid,0.1584,0.3312,0.5442
+Adaptive_Router,0.1545,0.3211,0.5385

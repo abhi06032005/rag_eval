@@ -1,0 +1,8 @@
+Endpoint,Concurrency,Total_Requests,Successful_Requests,Error_Rate_%,Throughput_RPS,Latency_p50_ms,Latency_p95_ms,Latency_p99_ms,Latency_mean_ms
+/retrieve,1,50,50,0.0,23.0,44.77,75.37,77.17,43.21
+/retrieve,2,50,50,0.0,52.6,34.71,63.91,64.6,37.14
+/retrieve,4,50,50,0.0,47.9,77.26,110.18,110.95,81.1
+/retrieve,8,50,50,0.0,37.5,214.12,263.73,265.29,202.76
+/ask,1,30,30,0.0,30.0,32.99,47.2,48.12,32.98
+/ask,2,30,30,0.0,47.1,40.64,62.75,63.44,40.87
+/ask,4,30,30,0.0,43.7,78.02,123.8,124.16,85.24

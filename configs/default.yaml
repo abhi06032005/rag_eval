@@ -1,0 +1,32 @@
+# RAGScaleBench Recommended Baseline Configuration
+version: 1
+
+total_documents: 75000
+arxiv_count: 30000
+wikipedia_count: 30000
+govinfo_count: 15000
+
+embedding_model: BAAI/bge-small-en-v1.5
+embedding_dimensions: 384
+chunk_size_tokens: 256
+overlap_tokens: 32
+
+vector_db: qdrant
+distance: cosine
+hnsw_m: 16
+ef_construct: 128
+hnsw_ef: 64
+quantization: none
+pq_compression: 16
+k: 10
+score_threshold: none
+exact: false
+
+generator_backend: ollama
+generator_model: llama3.2:3b
+temperature: 0.0
+top_p: 1.0
+max_new_tokens: 256
+
+dev_qa_path: data/qa/dev.jsonl
+test_qa_path: data/qa/test.jsonl

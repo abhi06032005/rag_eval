@@ -1,0 +1,354 @@
+{
+  "audit_timestamp": "2026-10-22T14:55:06Z",
+  "device": "CPU (torch_num_threads=2)",
+  "embedder": "all-MiniLM-L6-v2",
+  "test_queries_count": 300,
+  "summary_comparison": [
+    {
+      "Metric / Component": "Total Queries Evaluated",
+      "Fixed_Hybrid": 300,
+      "Adaptive_Router": 300,
+      "Delta (Adaptive vs Hybrid)": 0
+    },
+    {
+      "Metric / Component": "Neural Embedding Invocations",
+      "Fixed_Hybrid": 300,
+      "Adaptive_Router": 162,
+      "Delta (Adaptive vs Hybrid)": "-138 (-46.0%)"
+    },
+    {
+      "Metric / Component": "Qdrant / Vector Search Requests",
+      "Fixed_Hybrid": 300,
+      "Adaptive_Router": 162,
+      "Delta (Adaptive vs Hybrid)": "-138 (-46.0%)"
+    },
+    {
+      "Metric / Component": "Feature Extraction Mean Latency (ms)",
+      "Fixed_Hybrid": 0.0,
+      "Adaptive_Router": 0.152,
+      "Delta (Adaptive vs Hybrid)": "+0.152 ms (Router Overhead)"
+    },
+    {
+      "Metric / Component": "BM25 Search Mean Latency (ms)",
+      "Fixed_Hybrid": 15.302,
+      "Adaptive_Router": 16.816,
+      "Delta (Adaptive vs Hybrid)": "1.515 ms"
+    },
+    {
+      "Metric / Component": "Query Neural Embedding Mean Latency (ms)",
+      "Fixed_Hybrid": 29.504,
+      "Adaptive_Router": 16.601,
+      "Delta (Adaptive vs Hybrid)": "-12.903 ms (-43.7%)"
+    },
+    {
+      "Metric / Component": "Dense Search Mean Latency (ms)",
+      "Fixed_Hybrid": 1.075,
+      "Adaptive_Router": 0.65,
+      "Delta (Adaptive vs Hybrid)": "-0.425 ms (-39.5%)"
+    },
+    {
+      "Metric / Component": "RRF Fusion Mean Latency (ms)",
+      "Fixed_Hybrid": 0.411,
+      "Adaptive_Router": 0.235,
+      "Delta (Adaptive vs Hybrid)": "-0.176 ms"
+    },
+    {
+      "Metric / Component": "Total Latency p50 (ms)",
+      "Fixed_Hybrid": 43.74,
+      "Adaptive_Router": 34.0,
+      "Delta (Adaptive vs Hybrid)": "-9.75 ms (-22.3%)"
+    },
+    {
+      "Metric / Component": "Total Latency p95 (ms)",
+      "Fixed_Hybrid": 72.31,
+      "Adaptive_Router": 70.69,
+      "Delta (Adaptive vs Hybrid)": "-1.62 ms (-2.2%)"
+    },
+    {
+      "Metric / Component": "Total Latency p99 (ms)",
+      "Fixed_Hybrid": 88.55,
+      "Adaptive_Router": 101.23,
+      "Delta (Adaptive vs Hybrid)": "--12.68 ms"
+    },
+    {
+      "Metric / Component": "Mean Total Latency (ms)",
+      "Fixed_Hybrid": 46.3,
+      "Adaptive_Router": 34.49,
+      "Delta (Adaptive vs Hybrid)": "-11.81 ms (-25.5%)"
+    },
+    {
+      "Metric / Component": "Throughput (queries/second)",
+      "Fixed_Hybrid": 21.2,
+      "Adaptive_Router": 28.4,
+      "Delta (Adaptive vs Hybrid)": "+7.2 q/s (+34.2%)"
+    },
+    {
+      "Metric / Component": "Peak Memory RSS (MB)",
+      "Fixed_Hybrid": 612.5,
+      "Adaptive_Router": 612.5,
+      "Delta (Adaptive vs Hybrid)": "0.0 MB (Shared Process)"
+    }
+  ],
+  "per_query_sample": [
+    {
+      "query_id": "1",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 2.385,
+      "query_embedding_ms": 76.545,
+      "dense_search_ms": 1.078,
+      "rrf_fusion_ms": 0.575,
+      "total_ms": 80.594,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "3",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 25.676,
+      "query_embedding_ms": 42.321,
+      "dense_search_ms": 1.131,
+      "rrf_fusion_ms": 0.518,
+      "total_ms": 69.658,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "5",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 11.814,
+      "query_embedding_ms": 30.43,
+      "dense_search_ms": 1.11,
+      "rrf_fusion_ms": 0.48,
+      "total_ms": 43.844,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "13",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 22.074,
+      "query_embedding_ms": 37.617,
+      "dense_search_ms": 1.104,
+      "rrf_fusion_ms": 0.433,
+      "total_ms": 61.237,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "36",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 16.038,
+      "query_embedding_ms": 45.621,
+      "dense_search_ms": 0.872,
+      "rrf_fusion_ms": 0.311,
+      "total_ms": 62.853,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "42",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 11.912,
+      "query_embedding_ms": 38.903,
+      "dense_search_ms": 0.973,
+      "rrf_fusion_ms": 0.463,
+      "total_ms": 52.261,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "48",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 27.038,
+      "query_embedding_ms": 43.387,
+      "dense_search_ms": 1.191,
+      "rrf_fusion_ms": 0.496,
+      "total_ms": 72.123,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "49",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 15.011,
+      "query_embedding_ms": 33.183,
+      "dense_search_ms": 1.032,
+      "rrf_fusion_ms": 0.502,
+      "total_ms": 49.739,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "50",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 12.76,
+      "query_embedding_ms": 22.41,
+      "dense_search_ms": 1.205,
+      "rrf_fusion_ms": 0.477,
+      "total_ms": 36.859,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "51",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 13.274,
+      "query_embedding_ms": 27.451,
+      "dense_search_ms": 1.278,
+      "rrf_fusion_ms": 0.508,
+      "total_ms": 42.516,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "53",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 16.954,
+      "query_embedding_ms": 25.243,
+      "dense_search_ms": 1.24,
+      "rrf_fusion_ms": 0.473,
+      "total_ms": 43.916,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "54",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 14.477,
+      "query_embedding_ms": 26.51,
+      "dense_search_ms": 1.147,
+      "rrf_fusion_ms": 0.524,
+      "total_ms": 42.667,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "56",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 13.979,
+      "query_embedding_ms": 31.789,
+      "dense_search_ms": 1.061,
+      "rrf_fusion_ms": 0.453,
+      "total_ms": 47.289,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "57",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 14.839,
+      "query_embedding_ms": 28.568,
+      "dense_search_ms": 1.212,
+      "rrf_fusion_ms": 0.453,
+      "total_ms": 45.078,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "70",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 10.846,
+      "query_embedding_ms": 25.756,
+      "dense_search_ms": 0.987,
+      "rrf_fusion_ms": 0.442,
+      "total_ms": 38.037,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "72",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 9.003,
+      "query_embedding_ms": 30.416,
+      "dense_search_ms": 1.052,
+      "rrf_fusion_ms": 0.442,
+      "total_ms": 40.918,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "75",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 15.516,
+      "query_embedding_ms": 34.174,
+      "dense_search_ms": 1.125,
+      "rrf_fusion_ms": 0.471,
+      "total_ms": 51.292,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "94",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 16.931,
+      "query_embedding_ms": 34.146,
+      "dense_search_ms": 1.227,
+      "rrf_fusion_ms": 0.558,
+      "total_ms": 52.872,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "99",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 15.438,
+      "query_embedding_ms": 39.143,
+      "dense_search_ms": 1.204,
+      "rrf_fusion_ms": 0.561,
+      "total_ms": 56.354,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    },
+    {
+      "query_id": "100",
+      "policy": "Fixed_Hybrid",
+      "route_taken": "hybrid",
+      "feature_extraction_ms": 0.0,
+      "bm25_search_ms": 7.509,
+      "query_embedding_ms": 42.274,
+      "dense_search_ms": 1.166,
+      "rrf_fusion_ms": 0.397,
+      "total_ms": 51.355,
+      "neural_embedding_invocations": 1,
+      "dense_search_requests": 1
+    }
+  ]
+}

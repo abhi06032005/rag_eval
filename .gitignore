@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+data/raw/
+data/processed/*.parquet
+data/processed/*.jsonl
+results/runs/
+results/summary.csv
+results/*.png
+plots/*.png
+.env
+.vscode/
+.idea/
+
+# Binaries and executables
+bin/
+*.exe
+
+# Storage and scratch
+storage/
+scratch/
+.qdrant-initialized
+
+# Datasets and archives
+data/beir/
+*.zip
+*.tar.gz
+
+# Embeddings and large arrays
+*.npy
+*.npz
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db

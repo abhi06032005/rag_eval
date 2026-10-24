@@ -1,0 +1,12 @@
+﻿# Common Crawl Allowlist Domains for Web Retrieval Benchmarking
+# Permitted educational, scientific, and open data domains
+wikipedia.org
+wikimedia.org
+arxiv.org
+w3.org
+ietf.org
+gnu.org
+apache.org
+creativecommons.org
+nist.gov
+who.int

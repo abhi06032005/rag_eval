@@ -1,0 +1,171 @@
+{
+  "total_documents": 1250,
+  "corpus_sha256": "94098018909505233d5a0dc40c8c52f1e50a76f51c78e07f7e37a401fded915c",
+  "by_source": {
+    "arxiv": {
+      "record_count": 500,
+      "char_length": {
+        "mean": 1519.78,
+        "median": 1543.5,
+        "p10": 1124.8,
+        "p90": 1912.1,
+        "min": 293,
+        "max": 2053
+      },
+      "token_length": {
+        "mean": 286.01,
+        "median": 283.0,
+        "p10": 204.0,
+        "p90": 368.1,
+        "min": 66,
+        "max": 581
+      },
+      "chunks_per_document": {
+        "mean": 1.69,
+        "median": 2.0,
+        "p10": 1.0,
+        "p90": 2.0,
+        "total_chunks": 845
+      },
+      "data_anomalies": {
+        "empty_documents": 0,
+        "duplicated_texts": 0,
+        "unusually_short_under_100_chars": 0,
+        "potential_trailing_truncations": 0
+      },
+      "sample_source_locators": [
+        "https://arxiv.org/abs/2610.27615v1",
+        "https://arxiv.org/abs/2610.27616v1",
+        "https://arxiv.org/abs/2610.27617v1",
+        "https://arxiv.org/abs/2610.27618v1",
+        "https://arxiv.org/abs/2610.27620v1"
+      ],
+      "sample_published_dates": [
+        "2026-10-20T04:28:08Z",
+        "2026-10-20T04:31:18Z",
+        "2026-10-20T04:31:30Z",
+        "2026-10-20T04:32:37Z",
+        "2026-10-20T04:35:39Z"
+      ],
+      "snapshot_ids": [
+        "arxiv-2026-10"
+      ],
+      "licence_types": [
+        "arXiv Non-exclusive license to distribute"
+      ],
+      "licence_statuses": [
+        "allowed"
+      ]
+    },
+    "govinfo": {
+      "record_count": 250,
+      "char_length": {
+        "mean": 584.43,
+        "median": 617.0,
+        "p10": 436.0,
+        "p90": 702.0,
+        "min": 434,
+        "max": 702
+      },
+      "token_length": {
+        "mean": 98.34,
+        "median": 104.0,
+        "p10": 74.0,
+        "p90": 114.0,
+        "min": 74,
+        "max": 114
+      },
+      "chunks_per_document": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p10": 1.0,
+        "p90": 1.0,
+        "total_chunks": 250
+      },
+      "data_anomalies": {
+        "empty_documents": 0,
+        "duplicated_texts": 0,
+        "unusually_short_under_100_chars": 0,
+        "potential_trailing_truncations": 0
+      },
+      "sample_source_locators": [
+        "https://www.govinfo.gov/app/details/GOVINFO-119-PL-42-0001",
+        "https://www.govinfo.gov/app/details/GOVINFO-119-PL-42-0005",
+        "https://www.govinfo.gov/app/details/GOVINFO-119-PL-42-0009",
+        "https://www.govinfo.gov/app/details/GOVINFO-119-PL-42-0013",
+        "https://www.govinfo.gov/app/details/GOVINFO-119-PL-42-0017"
+      ],
+      "sample_published_dates": [
+        "2026-02-01T00:00:00Z",
+        "2026-02-01T00:00:00Z",
+        "2026-02-01T00:00:00Z",
+        "2026-02-01T00:00:00Z",
+        "2026-02-01T00:00:00Z"
+      ],
+      "snapshot_ids": [
+        "govinfo-bulk-2026"
+      ],
+      "licence_types": [
+        "U.S. Government Work (17 U.S.C. \u00a7105) - Public Domain"
+      ],
+      "licence_statuses": [
+        "allowed"
+      ]
+    },
+    "wikipedia": {
+      "record_count": 500,
+      "char_length": {
+        "mean": 590.13,
+        "median": 552.0,
+        "p10": 504.0,
+        "p90": 706.0,
+        "min": 99,
+        "max": 877
+      },
+      "token_length": {
+        "mean": 102.26,
+        "median": 106.0,
+        "p10": 82.0,
+        "p90": 117.0,
+        "min": 22,
+        "max": 212
+      },
+      "chunks_per_document": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p10": 1.0,
+        "p90": 1.0,
+        "total_chunks": 500
+      },
+      "data_anomalies": {
+        "empty_documents": 0,
+        "duplicated_texts": 0,
+        "unusually_short_under_100_chars": 1,
+        "potential_trailing_truncations": 0
+      },
+      "sample_source_locators": [
+        "https://en.wikipedia.org/?curid=12782525",
+        "https://en.wikipedia.org/?curid=14593032",
+        "https://en.wikipedia.org/?curid=16923850",
+        "https://en.wikipedia.org/?curid=17984055",
+        "https://en.wikipedia.org/?curid=29799271"
+      ],
+      "sample_published_dates": [
+        "2026-10-01T00:00:00Z",
+        "2026-10-01T00:00:00Z",
+        "2026-10-01T00:00:00Z",
+        "2026-10-01T00:00:00Z",
+        "2026-10-01T00:00:00Z"
+      ],
+      "snapshot_ids": [
+        "enwiki-20261001"
+      ],
+      "licence_types": [
+        "CC BY-SA 4.0 / GFDL with attribution"
+      ],
+      "licence_statuses": [
+        "allowed"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+# RAGScaleBench Fast Smoke-Test Configuration
+version: 1
+
+total_documents: 200
+arxiv_count: 80
+wikipedia_count: 80
+govinfo_count: 40
+
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+embedding_dimensions: 384
+chunk_size_tokens: 128
+overlap_tokens: 0
+
+vector_db: qdrant
+distance: cosine
+hnsw_m: 8
+ef_construct: 64
+hnsw_ef: 32
+quantization: none
+pq_compression: 16
+k: 5
+score_threshold: none
+exact: false
+
+generator_backend: mock
+generator_model: mock-generator
+temperature: 0.0
+top_p: 1.0
+max_new_tokens: 128
+
+dev_qa_path: data/qa/dev.jsonl
+test_qa_path: data/qa/test.jsonl

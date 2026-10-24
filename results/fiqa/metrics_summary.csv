@@ -1,0 +1,5 @@
+Configuration,Backend,Recall@10,nDCG@10,MRR,Latency_p50_ms,Latency_mean_ms,Build_Time_s,Index_Disk_MB,Process_RAM_MB
+BM25,Pure Python Inverted Index,0.2843,0.2247,0.2898,121.57,121.8,7.8,0.0,706.7
+Dense_Exact,NumPy Exact Cosine Matrix Product,0.4133,0.3532,0.4382,5.04,5.29,7.8,84.43,706.7
+Fixed_Hybrid,Reciprocal Rank Fusion (k=60),0.4113,0.33,0.4085,126.94,128.26,7.8,84.43,706.7
+Adaptive_Router,Query-Adaptive Quality-Aware Router,0.4006,0.3216,0.4007,125.43,127.17,7.8,84.43,706.7

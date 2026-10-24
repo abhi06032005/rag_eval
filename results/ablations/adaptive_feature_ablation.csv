@@ -1,0 +1,6 @@
+Feature_Configuration,Dense_Searches_Saved_%,Recall@10,nDCG@10,MRR,Mean_Latency_ms
+Full_Policy,46.0,0.8243,0.691,0.6541,11.3
+Ablation_No_IDF,46.7,0.8243,0.691,0.6541,13.11
+Ablation_No_Margin,93.0,0.7672,0.6478,0.6137,8.99
+Ablation_Strict_Margin_Only,24.3,0.8237,0.6858,0.647,10.56
+Ablation_Length_Heuristic (>=12 tokens),49.0,0.7827,0.6556,0.6195,9.06

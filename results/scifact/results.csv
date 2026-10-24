@@ -1,0 +1,8 @@
+Configuration,Backend,Recall@1,Recall@5,Recall@10,MRR,nDCG@10,ANN_Recall@10,Latency_p50_ms,Latency_p95_ms,Latency_mean_ms,Build_Time_s,Disk_Size_MB,RAM_MB
+BM25 (Lexical),Pure Python Inverted Index,0.515,0.7028,0.7605,0.614,0.6432,1.0,8.04,16.65,8.45,0.83,0.0,99.4
+Dense Exact (Brute Force),NumPy Exact Cosine Matrix Product,0.4823,0.7379,0.7833,0.611,0.6451,1.0,0.43,0.58,0.45,0.0,7.59,102.0
+"Qdrant Standard HNSW (m=16, ef=64)",Qdrant v1.19.2 (Standalone Rust Server),0.4823,0.7379,0.7833,0.611,0.6451,0.997,15.38,27.25,15.07,4.62,138.95,85.8
+"Qdrant Tuned HNSW (m=32, ef=128)",Qdrant v1.19.2 (Standalone Rust Server),0.4823,0.7379,0.7833,0.611,0.6451,0.999,15.44,26.79,15.15,5.36,277.95,96.3
+Qdrant Scalar Quantization (INT8 + Rescore),Qdrant v1.19.2 (Standalone Rust Server),0.479,0.7346,0.78,0.6077,0.6417,0.9967,15.41,26.55,14.16,4.75,418.82,108.9
+Qdrant Binary Quantization (1-bit + Rescore),Qdrant v1.19.2 (Standalone Rust Server),0.4823,0.7379,0.7817,0.6105,0.6446,0.9803,15.27,27.11,13.4,4.93,558.03,121.4
+Hybrid (BM25 + Dense Exact RRF k=60),Reciprocal Rank Fusion,0.5298,0.7292,0.8004,0.6473,0.6763,1.0,8.98,9.01,8.98,0.83,7.59,102.0

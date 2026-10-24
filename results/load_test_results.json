@@ -1,0 +1,52 @@
+{
+  "concurrency_1": {
+    "concurrency": 1,
+    "queries": 100,
+    "p50_ms": 3.98,
+    "p95_ms": 4.41,
+    "p99_ms": 5.03,
+    "throughput_rps": 244.3,
+    "errors": 0,
+    "error_rate": 0.0
+  },
+  "concurrency_2": {
+    "concurrency": 2,
+    "queries": 100,
+    "p50_ms": 5.53,
+    "p95_ms": 6.3,
+    "p99_ms": 6.45,
+    "throughput_rps": 353.6,
+    "errors": 0,
+    "error_rate": 0.0
+  },
+  "concurrency_5": {
+    "concurrency": 5,
+    "queries": 100,
+    "p50_ms": 11.49,
+    "p95_ms": 13.75,
+    "p99_ms": 14.61,
+    "throughput_rps": 421.3,
+    "errors": 0,
+    "error_rate": 0.0
+  },
+  "concurrency_10": {
+    "concurrency": 10,
+    "queries": 100,
+    "p50_ms": 21.93,
+    "p95_ms": 31.51,
+    "p99_ms": 36.57,
+    "throughput_rps": 415.9,
+    "errors": 0,
+    "error_rate": 0.0
+  },
+  "concurrency_20": {
+    "concurrency": 20,
+    "queries": 100,
+    "p50_ms": 36.56,
+    "p95_ms": 63.37,
+    "p99_ms": 70.96,
+    "throughput_rps": 401.3,
+    "errors": 0,
+    "error_rate": 0.0
+  }
+}

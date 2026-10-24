@@ -1,0 +1,375 @@
+{
+  "summary": {
+    "audit_target": "FastAPI /ask endpoint & MockGenerator",
+    "origin_classification": {
+      "is_actual_llm": false,
+      "is_cached_llm": false,
+      "is_mock_generator": true,
+      "is_deterministic_template": true,
+      "mechanism_description": "MockGenerator deterministically splits the first retrieved context by period '.', extracts the first non-empty sentence as an answer candidate, and formats: 'Based on the provided evidence, {summary_sentence}. [{first_src}]'."
+    },
+    "evaluated_records_count": 20,
+    "mean_generation_latency_ms": 0.0338,
+    "p50_generation_latency_ms": 0.0235,
+    "p95_generation_latency_ms": 0.0509,
+    "mean_token_count": 28.4,
+    "citation_metrics": {
+      "mean_citation_precision": 1.0,
+      "mean_citation_recall": 1.0,
+      "critical_note": "A citation ID like '[doc:123]' is merely string formatting; it does NOT constitute factual proof."
+    },
+    "claim_entailment_metrics": {
+      "total_claims_evaluated": 20,
+      "entailed_claims_count": 20,
+      "unsupported_claims_count": 0,
+      "entailed_claim_rate": 1.0,
+      "unsupported_claim_rate": 0.0
+    },
+    "abstention_handling": {
+      "empty_context_test_passed": true,
+      "abstention_response": "No context provided to answer: Can quantum computers factor 4096-bit RSA keys today?."
+    }
+  },
+  "detailed_evaluations": [
+    {
+      "qa_id": "qa-test-0001",
+      "question": "According to study 'DISTA-LP: Privacy-Preserving Distributed Linear Programming ",
+      "generated_answer": "Based on the provided evidence, Linear-programming (LP) mechanisms for metric differential privacy (mDP) enable fine-grained, task-aware utility control, but they are computationally expensive and become privacy-fragile in distributed settings: uploading user-specific LP coefficient matrices (e. [arxiv:2610.27615v1]",
+      "latency_ms": 0.18,
+      "token_count": 36,
+      "cited_sources": [
+        "arxiv:2610.27615v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.3804
+    },
+    {
+      "qa_id": "qa-test-0002",
+      "question": "According to study 'EchoNav: Evidential BEV Completion from Historical Observati",
+      "generated_answer": "Based on the provided evidence, Visual navigation in cluttered environments requires robots to recover previously observed structure and infer obstacles and free space that remain occluded. [arxiv:2610.27616v1]",
+      "latency_ms": 0.044,
+      "token_count": 27,
+      "cited_sources": [
+        "arxiv:2610.27616v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2767
+    },
+    {
+      "qa_id": "qa-test-0003",
+      "question": "According to study 'Provisioning Robust and Efficient LiDAR Perception for Auton",
+      "generated_answer": "Based on the provided evidence, LiDAR-based 3D object detection is a core perception service for autonomous driving, but deployment requires robustness to point-cloud corruption while meeting latency and memory requirements. [arxiv:2610.27617v1]",
+      "latency_ms": 0.033,
+      "token_count": 31,
+      "cited_sources": [
+        "arxiv:2610.27617v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.299
+    },
+    {
+      "qa_id": "qa-test-0004",
+      "question": "According to study 'JARVIS: From Visual Manuals to Autonomous Robotic Assembly',",
+      "generated_answer": "Based on the provided evidence, Visual manuals communicate procedural knowledge through stepwise diagrams, but translating these instructions into reliable long-horizon robotic execution remains challenging. [arxiv:2610.27618v1]",
+      "latency_ms": 0.023,
+      "token_count": 25,
+      "cited_sources": [
+        "arxiv:2610.27618v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.25
+    },
+    {
+      "qa_id": "qa-test-0005",
+      "question": "According to study 'Local Allow, Global Deny: Why Per-Action Authorization Does ",
+      "generated_answer": "Based on the provided evidence, Autonomous LLM agents act through tools under per-action authorization: a local guard screens each tool call in isolation. [arxiv:2610.27620v1]",
+      "latency_ms": 0.031,
+      "token_count": 24,
+      "cited_sources": [
+        "arxiv:2610.27620v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2174
+    },
+    {
+      "qa_id": "qa-test-0006",
+      "question": "According to study 'A Radiation-Hardened, Fault-Aware Quantized Neural Network T",
+      "generated_answer": "Based on the provided evidence, Deep learning (DL) models are increasingly being deployed into radiation-challenging environments in spacecraft, particle accelerators, and, soon, space-based data centers. [arxiv:2610.27621v1]",
+      "latency_ms": 0.023,
+      "token_count": 26,
+      "cited_sources": [
+        "arxiv:2610.27621v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2308
+    },
+    {
+      "qa_id": "qa-test-0007",
+      "question": "According to study 'A Head Camera Is (Almost) All You Need: An Electronics-Free ",
+      "generated_answer": "Based on the provided evidence, Handheld demonstration devices decouple data collection from the robot, but conventional designs burden the hand with a wrist camera, cables and a pose tracker (SLAM, an IMU, a VR controller, or a fixed external camera that the collector's body occludes), and burden the pipeline with as many data streams to timestamp, synchronise and cross-calibrate. [arxiv:2610.27622v1]",
+      "latency_ms": 0.025,
+      "token_count": 60,
+      "cited_sources": [
+        "arxiv:2610.27622v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.4545
+    },
+    {
+      "qa_id": "qa-test-0008",
+      "question": "According to study 'From Outcomes to Steps: Reliable Success-Aware Critic Learni",
+      "generated_answer": "Based on the provided evidence, Reinforcement learning for long-horizon language agents requires identifying whether intermediate actions make eventual task success more or less likely when supervision is available only at trajectory level. [arxiv:2610.27623v1]",
+      "latency_ms": 0.028,
+      "token_count": 33,
+      "cited_sources": [
+        "arxiv:2610.27623v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.3409
+    },
+    {
+      "qa_id": "qa-test-0009",
+      "question": "According to study 'TriGeoBench: A Multimodal Mathematical Geometry Benchmark wi",
+      "generated_answer": "Based on the provided evidence, Multimodal Large Language Models show strong vision-language capabilities, yet their geometry-centric reasoning remains insufficiently understood. [arxiv:2610.27626v1]",
+      "latency_ms": 0.021,
+      "token_count": 21,
+      "cited_sources": [
+        "arxiv:2610.27626v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2112
+    },
+    {
+      "qa_id": "qa-test-0010",
+      "question": "According to study 'PAR: Progress-Aligned Recurrence for Length Generalization i",
+      "generated_answer": "Based on the provided evidence, Looped language models can run more iterations at test time, but additional iterations need not help them solve longer problems. [arxiv:2610.27628v1]",
+      "latency_ms": 0.02,
+      "token_count": 26,
+      "cited_sources": [
+        "arxiv:2610.27628v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2333
+    },
+    {
+      "qa_id": "qa-test-0011",
+      "question": "According to study 'Minimum-Time Escape from the Conic Field of View of a Reeds-",
+      "generated_answer": "Based on the provided evidence, We study minimum-time escape of an omnidirectional evader from the forward conic field of view of a Reeds-Shepp pursuer with minimum turning radius $r$. [arxiv:2610.27629v1]",
+      "latency_ms": 0.034,
+      "token_count": 30,
+      "cited_sources": [
+        "arxiv:2610.27629v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2909
+    },
+    {
+      "qa_id": "qa-test-0012",
+      "question": "According to study 'A Two-Way Street: Surveying the Interplay between Code-Mixin",
+      "generated_answer": "Based on the provided evidence, Systems for code-mixed (CM) text and speech rarely start from scratch. [arxiv:2610.27631v1]",
+      "latency_ms": 0.036,
+      "token_count": 17,
+      "cited_sources": [
+        "arxiv:2610.27631v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.224
+    },
+    {
+      "qa_id": "qa-test-0013",
+      "question": "According to study 'When Does Feedback Help? Auditing Learned Voltage-Clamp Expe",
+      "generated_answer": "Based on the provided evidence, A learned scientific controller can outperform a misspecified planner without benefiting from feedback. [arxiv:2610.27632v1]",
+      "latency_ms": 0.019,
+      "token_count": 19,
+      "cited_sources": [
+        "arxiv:2610.27632v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2281
+    },
+    {
+      "qa_id": "qa-test-0014",
+      "question": "According to study 'Standards-Guided and Dependency-Aware Code-Level Documentati",
+      "generated_answer": "Based on the provided evidence, Automatically generating high-quality documentation for software repositories remains challenging: existing approaches largely treat documentation as unconstrained text generation, lacking explicit quality specifications, depending heavily on long-context prompts over raw code, and offering limited support for reproducible evaluation. [arxiv:2610.27634v1]",
+      "latency_ms": 0.032,
+      "token_count": 43,
+      "cited_sources": [
+        "arxiv:2610.27634v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.3585
+    },
+    {
+      "qa_id": "qa-test-0015",
+      "question": "According to study 'CXLResume: Retained-State Checkpoint and Restore for In-Memo",
+      "generated_answer": "Based on the provided evidence, Checkpointing and restoring an in-memory service typically require writing its memory pages to checkpoint images and refilling them at the destination. [arxiv:2610.27636v1]",
+      "latency_ms": 0.021,
+      "token_count": 27,
+      "cited_sources": [
+        "arxiv:2610.27636v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.292
+    },
+    {
+      "qa_id": "qa-test-0016",
+      "question": "According to study 'SCODEL: Shared Canonical Ontology Definitions for Food Entit",
+      "generated_answer": "Based on the provided evidence, Identifying recipe entities and linking them to ontology concepts is fundamental for semantic recipe understanding. [arxiv:2610.27637v1]",
+      "latency_ms": 0.019,
+      "token_count": 21,
+      "cited_sources": [
+        "arxiv:2610.27637v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2313
+    },
+    {
+      "qa_id": "qa-test-0017",
+      "question": "According to study 'Ensemble-Aware Structural Encoding (EASE): Conditioning Prot",
+      "generated_answer": "Based on the provided evidence, Protein foundation models provide transferable representations for downstream peptide prediction tasks. [arxiv:2610.27638v1]",
+      "latency_ms": 0.024,
+      "token_count": 17,
+      "cited_sources": [
+        "arxiv:2610.27638v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.1622
+    },
+    {
+      "qa_id": "qa-test-0018",
+      "question": "According to study 'BCT: Bayes-Consistent Tempering for Flow Language Models', w",
+      "generated_answer": "Based on the provided evidence, Temperature scaling is typically applied as a post-hoc transformation of model probabilities. [arxiv:2610.27641v1]",
+      "latency_ms": 0.023,
+      "token_count": 18,
+      "cited_sources": [
+        "arxiv:2610.27641v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2
+    },
+    {
+      "qa_id": "qa-test-0019",
+      "question": "According to study 'Secure Multimodal Federated Optimization via Hierarchical DN",
+      "generated_answer": "Based on the provided evidence, Federated optimization over heterogeneous multimodal data enables distributed institutions to collaboratively optimize a shared model using medical images, genomic profiles, clinical records, and physiological signals without centralizing raw data. [arxiv:2610.27644v1]",
+      "latency_ms": 0.019,
+      "token_count": 35,
+      "cited_sources": [
+        "arxiv:2610.27644v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.3593
+    },
+    {
+      "qa_id": "qa-test-0020",
+      "question": "According to study 'CUA-Recovery: Benchmarking Error Recovery in Long-Horizon Co",
+      "generated_answer": "Based on the provided evidence, As computer-use agents (CUAs) move to long-horizon workflows spanning multiple applications, undetected errors can silently corrupt persistent state and cause cascading failures in subsequent actions. [arxiv:2610.27645v1]",
+      "latency_ms": 0.023,
+      "token_count": 31,
+      "cited_sources": [
+        "arxiv:2610.27645v1"
+      ],
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "claims_total": 1,
+      "claims_entailed": 1,
+      "claims_unsupported": 0,
+      "entailment_rate": 1.0,
+      "factual_alignment_f1": 0.2636
+    }
+  ]
+}

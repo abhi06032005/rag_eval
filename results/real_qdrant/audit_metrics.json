@@ -1,0 +1,34 @@
+{
+  "Standard_HNSW": {
+    "collection": "scifact_hnsw_std",
+    "indexed_vectors_count": 5183,
+    "segments_count": 2,
+    "status": "green",
+    "disk_size_mb": 138.95,
+    "server_rss_mb": 85.8
+  },
+  "Tuned_HNSW": {
+    "collection": "scifact_hnsw_tuned",
+    "indexed_vectors_count": 5183,
+    "segments_count": 2,
+    "status": "green",
+    "disk_size_mb": 277.95,
+    "server_rss_mb": 96.3
+  },
+  "Scalar_Quantization": {
+    "collection": "scifact_sq_int8",
+    "indexed_vectors_count": 5183,
+    "segments_count": 2,
+    "status": "green",
+    "disk_size_mb": 418.82,
+    "server_rss_mb": 108.9
+  },
+  "Binary_Quantization": {
+    "collection": "scifact_bq_1bit",
+    "indexed_vectors_count": 5183,
+    "segments_count": 2,
+    "status": "green",
+    "disk_size_mb": 558.03,
+    "server_rss_mb": 121.4
+  }
+}

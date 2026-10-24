@@ -1,0 +1,16 @@
+manifest_version: 1
+generated_at: '2026-10-21T18:19:59.107927+00:00'
+total_documents: 1250
+corpus_sha256: 94098018909505233d5a0dc40c8c52f1e50a76f51c78e07f7e37a401fded915c
+source_counts:
+  arxiv: 500
+  wikipedia: 500
+  govinfo: 250
+source_snapshots:
+  arxiv: arxiv-2026-10
+  wikipedia: enwiki-20261001
+  govinfo: govinfo-bulk-2026
+licence_declarations:
+  arxiv: arXiv Non-exclusive license to distribute
+  wikipedia: CC BY-SA 4.0 / GFDL with attribution
+  govinfo: "U.S. Government Work (17 U.S.C. \xA7105) - Public Domain"

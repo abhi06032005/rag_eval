@@ -1,0 +1,11 @@
+# Synthetic QA Generation Settings
+version: 1
+target_count: 100
+max_evidence_span_chars: 500
+min_evidence_span_chars: 30
+temperature: 0.0
+rejection_rules:
+  require_verbatim_evidence: true
+  reject_empty_answer: true
+  reject_title_query: true
+  deduplicate_questions: true

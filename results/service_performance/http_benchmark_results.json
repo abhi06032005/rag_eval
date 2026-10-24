@@ -1,0 +1,93 @@
+{
+  "test_timestamp": "2026-10-22T07:57:28Z",
+  "fastapi_server_rss_mb": 5.2,
+  "qdrant_server_rss_mb": 83.2,
+  "qdrant_disk_usage_mb": 138.96,
+  "index_build_duration_s": 4.63,
+  "total_benchmark_records": [
+    {
+      "Endpoint": "/retrieve",
+      "Concurrency": 1,
+      "Total_Requests": 50,
+      "Successful_Requests": 50,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 23.0,
+      "Latency_p50_ms": 44.77,
+      "Latency_p95_ms": 75.37,
+      "Latency_p99_ms": 77.17,
+      "Latency_mean_ms": 43.21
+    },
+    {
+      "Endpoint": "/retrieve",
+      "Concurrency": 2,
+      "Total_Requests": 50,
+      "Successful_Requests": 50,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 52.6,
+      "Latency_p50_ms": 34.71,
+      "Latency_p95_ms": 63.91,
+      "Latency_p99_ms": 64.6,
+      "Latency_mean_ms": 37.14
+    },
+    {
+      "Endpoint": "/retrieve",
+      "Concurrency": 4,
+      "Total_Requests": 50,
+      "Successful_Requests": 50,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 47.9,
+      "Latency_p50_ms": 77.26,
+      "Latency_p95_ms": 110.18,
+      "Latency_p99_ms": 110.95,
+      "Latency_mean_ms": 81.1
+    },
+    {
+      "Endpoint": "/retrieve",
+      "Concurrency": 8,
+      "Total_Requests": 50,
+      "Successful_Requests": 50,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 37.5,
+      "Latency_p50_ms": 214.12,
+      "Latency_p95_ms": 263.73,
+      "Latency_p99_ms": 265.29,
+      "Latency_mean_ms": 202.76
+    },
+    {
+      "Endpoint": "/ask",
+      "Concurrency": 1,
+      "Total_Requests": 30,
+      "Successful_Requests": 30,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 30.0,
+      "Latency_p50_ms": 32.99,
+      "Latency_p95_ms": 47.2,
+      "Latency_p99_ms": 48.12,
+      "Latency_mean_ms": 32.98
+    },
+    {
+      "Endpoint": "/ask",
+      "Concurrency": 2,
+      "Total_Requests": 30,
+      "Successful_Requests": 30,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 47.1,
+      "Latency_p50_ms": 40.64,
+      "Latency_p95_ms": 62.75,
+      "Latency_p99_ms": 63.44,
+      "Latency_mean_ms": 40.87
+    },
+    {
+      "Endpoint": "/ask",
+      "Concurrency": 4,
+      "Total_Requests": 30,
+      "Successful_Requests": 30,
+      "Error_Rate_%": 0.0,
+      "Throughput_RPS": 43.7,
+      "Latency_p50_ms": 78.02,
+      "Latency_p95_ms": 123.8,
+      "Latency_p99_ms": 124.16,
+      "Latency_mean_ms": 85.24
+    }
+  ]
+}

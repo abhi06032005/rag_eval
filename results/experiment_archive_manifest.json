@@ -1,0 +1,63 @@
+{
+  "project": "RAGScaleBench",
+  "phase": "Phase 5: Original Research, Statistical Validation & Paper Preparation",
+  "archived_at": "2026-10-22T08:06:00Z",
+  "research_question": "Can a query-adaptive, quality-aware retrieval policy improve the quality-latency-memory trade-off compared with fixed BM25, dense retrieval, and hybrid Reciprocal Rank Fusion?",
+  "datasets": {
+    "scifact": {
+      "name": "BEIR/SciFact",
+      "corpus_path": "data/beir/scifact/corpus.jsonl",
+      "test_queries_path": "data/beir/scifact/queries.jsonl",
+      "test_qrels_path": "data/beir/scifact/qrels/test.tsv",
+      "corpus_count": 5183,
+      "test_query_count": 300,
+      "test_qrel_count": 339,
+      "dense_embeddings_cached": "results/scifact/corpus_embeddings.npy"
+    },
+    "nfcorpus": {
+      "name": "BEIR/NFCorpus",
+      "corpus_path": "data/beir/nfcorpus/corpus.jsonl",
+      "test_queries_path": "data/beir/nfcorpus/queries.jsonl",
+      "test_qrels_path": "data/beir/nfcorpus/qrels/test.tsv",
+      "corpus_count": 3633,
+      "test_query_count": 323,
+      "test_qrel_count": 12334,
+      "dense_embeddings_cached": "results/nfcorpus/corpus_embeddings.npy"
+    },
+    "fiqa": {
+      "name": "BEIR/FiQA",
+      "corpus_path": "data/beir/fiqa/corpus.jsonl",
+      "test_queries_path": "data/beir/fiqa/queries.jsonl",
+      "test_qrels_path": "data/beir/fiqa/qrels/test.tsv",
+      "corpus_count": 57638,
+      "test_query_count": 648,
+      "test_qrel_count": 1706,
+      "bm25_metrics_path": "results/fiqa/bm25_results.json"
+    }
+  },
+  "experimental_results": {
+    "scifact_corrected_metrics": "results/scifact/corrected_results.csv",
+    "scifact_per_query_rankings": "results/scifact/per_query_rankings.jsonl",
+    "scifact_bootstrap_validation": "results/scifact/bootstrap_comparisons.csv",
+    "scifact_adaptive_decisions": "results/scifact/adaptive_routing_decisions.jsonl",
+    "scifact_failure_cases": "results/scifact/failure_cases.json",
+    "nfcorpus_summary": "results/nfcorpus/metrics_summary.csv",
+    "nfcorpus_bootstrap": "results/nfcorpus/bootstrap_comparisons.csv",
+    "service_performance_summary": "results/service_performance/http_benchmark_summary.csv",
+    "service_performance_manifest": "results/service_performance/http_benchmark_results.json",
+    "fusion_ablation": "results/ablations/fusion_parameter_ablation.csv",
+    "topk_ablation": "results/ablations/topk_cutoff_ablation.csv",
+    "feature_ablation": "results/ablations/adaptive_feature_ablation.csv",
+    "quantization_rescore_ablation": "results/ablations/quantization_rescore_ablation.csv",
+    "qa_groundedness_evaluation": "results/qa/groundedness_evaluation.json"
+  },
+  "publications": {
+    "draft_paper": "papers/query_adaptive_hybrid_retrieval.md",
+    "phase4_audit_report": "reports/phase4_verification_audit.md"
+  },
+  "verification_status": {
+    "test_suite_passed": 48,
+    "test_suite_failed": 0,
+    "zero_orphaned_servers": true
+  }
+}

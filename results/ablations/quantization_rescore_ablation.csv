@@ -1,0 +1,5 @@
+Quantization_Setup,Recall@10,nDCG@10,ANN_Recall@10,Latency_p50_ms,Latency_mean_ms
+Scalar INT8 + Rescore=True,0.7767,0.6404,0.992,15.35,14.42
+Scalar INT8 + Rescore=False,0.78,0.6431,0.976,15.37,15.42
+Binary 1-bit + Rescore=True,0.7767,0.6438,0.9467,16.04,17.91
+Binary 1-bit + Rescore=False,0.7085,0.5863,0.562,15.77,16.74

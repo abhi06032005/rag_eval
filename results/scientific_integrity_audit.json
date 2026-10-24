@@ -1,0 +1,382 @@
+{
+  "audit_version": "1.0-final-scientific-integrity",
+  "split_info": {
+    "scifact": {
+      "corpus_docs": 5183,
+      "queries_count": 1109,
+      "qrels": {
+        "train": {
+          "queries_with_positive_qrels": 809,
+          "total_qrel_pairs": 919,
+          "sha256": "a53f2114831916c096b6c37d9e54da68cef4efdcdbd5ed46533601af972acf1d"
+        },
+        "dev": null,
+        "test": {
+          "queries_with_positive_qrels": 300,
+          "total_qrel_pairs": 339,
+          "sha256": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+        }
+      },
+      "overlaps": {
+        "test_vs_train": 0
+      }
+    },
+    "nfcorpus": {
+      "corpus_docs": 3633,
+      "queries_count": 3237,
+      "qrels": {
+        "train": {
+          "queries_with_positive_qrels": 2590,
+          "total_qrel_pairs": 110575,
+          "sha256": "6336b80f9bffc4f063f3aa450047ad35c0b7c534efe4a6ba35e16dbace047f6a"
+        },
+        "dev": {
+          "queries_with_positive_qrels": 324,
+          "total_qrel_pairs": 11385,
+          "sha256": "b1d38b5e8f78c4a5820bce2b7ec2db54911d7690dc601e76811846b211180bd8"
+        },
+        "test": {
+          "queries_with_positive_qrels": 323,
+          "total_qrel_pairs": 12334,
+          "sha256": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a"
+        }
+      },
+      "overlaps": {
+        "dev_vs_train": 0,
+        "dev_vs_test": 0,
+        "test_vs_train": 0
+      }
+    },
+    "fiqa": {
+      "corpus_docs": 57638,
+      "queries_count": 6648,
+      "qrels": {
+        "train": {
+          "queries_with_positive_qrels": 5500,
+          "total_qrel_pairs": 14166,
+          "sha256": "e46a99529aa61b12e086a5c057e4e0ecaeda9502e53d5fe855efce778f1ec59a"
+        },
+        "dev": {
+          "queries_with_positive_qrels": 500,
+          "total_qrel_pairs": 1238,
+          "sha256": "03b27e547cd29dc721c3b93ce8ddd70df6b2d0ce954d8ef3659d386e8cd72c11"
+        },
+        "test": {
+          "queries_with_positive_qrels": 648,
+          "total_qrel_pairs": 1706,
+          "sha256": "6adc2a640dcdd22bb8b3858f89107adef2a7c3db20a63550dfa7a0f71e379e44"
+        }
+      },
+      "overlaps": {
+        "dev_vs_train": 0,
+        "dev_vs_test": 0,
+        "test_vs_train": 0
+      }
+    }
+  },
+  "task_197_audit": {
+    "log_path": "C:\\Users\\devda\\.gemini\\antigravity-ide\\brain\\f9dd25da-1ce4-4e26-a369-e4f913a55f04\\.system_generated\\tasks\\task-197.log",
+    "log_exists": true,
+    "total_log_lines": 51,
+    "completed_line": "All FiQA benchmark artifacts successfully saved in 2664.4s.",
+    "files": {
+      "corpus_embeddings": {
+        "exists": true,
+        "size_bytes": 88532096,
+        "mtime": 1792663043.9663024
+      },
+      "query_embeddings": {
+        "exists": true,
+        "size_bytes": 995456,
+        "mtime": 1792660687.1920147
+      },
+      "metrics_summary": {
+        "exists": true,
+        "size_bytes": 490,
+        "mtime": 1792663337.829423
+      },
+      "bootstrap_comparisons": {
+        "exists": true,
+        "size_bytes": 1389,
+        "mtime": 1792663337.8320968
+      },
+      "statistical_validation": {
+        "exists": true,
+        "size_bytes": 36439,
+        "mtime": 1792663337.8350985
+      },
+      "adaptive_routing_decisions": {
+        "exists": true,
+        "size_bytes": 163970,
+        "mtime": 1792663337.8391492
+      }
+    }
+  },
+  "fiqa_dense_superiority": {
+    "bm25": {
+      "Configuration": "BM25",
+      "Backend": "Pure Python Inverted Index",
+      "Recall@10": 0.2843,
+      "nDCG@10": 0.2247,
+      "MRR": 0.2898,
+      "Latency_p50_ms": 121.57,
+      "Latency_mean_ms": 121.8,
+      "Build_Time_s": 7.8,
+      "Index_Disk_MB": 0.0,
+      "Process_RAM_MB": 706.7
+    },
+    "dense_exact": {
+      "Configuration": "Dense_Exact",
+      "Backend": "NumPy Exact Cosine Matrix Product",
+      "Recall@10": 0.4133,
+      "nDCG@10": 0.3532,
+      "MRR": 0.4382,
+      "Latency_p50_ms": 5.04,
+      "Latency_mean_ms": 5.29,
+      "Build_Time_s": 7.8,
+      "Index_Disk_MB": 84.43,
+      "Process_RAM_MB": 706.7
+    },
+    "fixed_hybrid": {
+      "Configuration": "Fixed_Hybrid",
+      "Backend": "Reciprocal Rank Fusion (k=60)",
+      "Recall@10": 0.4113,
+      "nDCG@10": 0.33,
+      "MRR": 0.4085,
+      "Latency_p50_ms": 126.94,
+      "Latency_mean_ms": 128.26,
+      "Build_Time_s": 7.8,
+      "Index_Disk_MB": 84.43,
+      "Process_RAM_MB": 706.7
+    },
+    "adaptive_router": {
+      "Configuration": "Adaptive_Router",
+      "Backend": "Query-Adaptive Quality-Aware Router",
+      "Recall@10": 0.4006,
+      "nDCG@10": 0.3216,
+      "MRR": 0.4007,
+      "Latency_p50_ms": 125.43,
+      "Latency_mean_ms": 127.17,
+      "Build_Time_s": 7.8,
+      "Index_Disk_MB": 84.43,
+      "Process_RAM_MB": 706.7
+    },
+    "delta_ndcg_adapt_vs_dense": -0.0316,
+    "delta_recall_adapt_vs_dense": -0.0127,
+    "dense_speedup_factor_vs_adapt": 24.0,
+    "delta_ndcg_hybrid_vs_dense": -0.0232,
+    "bootstrap_comparisons": [
+      {
+        "Comparison": "BM25 vs Dense_Exact",
+        "Metric": "nDCG@10",
+        "Mean(BM25)": 0.2247,
+        "Mean(Dense_Exact)": 0.3532,
+        "Delta (A - B)": -0.1286,
+        "95% CI Lower": -0.1557,
+        "95% CI Upper": -0.1019,
+        "p-value": 0.0001,
+        "Significant?": "YES",
+        "Win %": "18.5%",
+        "Tie %": "35.8%",
+        "Loss %": "45.7%",
+        "Mean(Fixed_Hybrid)": null,
+        "Mean(Adaptive_Router)": null
+      },
+      {
+        "Comparison": "BM25 vs Dense_Exact",
+        "Metric": "Recall@10",
+        "Mean(BM25)": 0.2843,
+        "Mean(Dense_Exact)": 0.4133,
+        "Delta (A - B)": -0.129,
+        "95% CI Lower": -0.16,
+        "95% CI Upper": -0.098,
+        "p-value": 0.0001,
+        "Significant?": "YES",
+        "Win %": "10.3%",
+        "Tie %": "54.8%",
+        "Loss %": "34.9%",
+        "Mean(Fixed_Hybrid)": null,
+        "Mean(Adaptive_Router)": null
+      },
+      {
+        "Comparison": "Dense_Exact vs Fixed_Hybrid",
+        "Metric": "nDCG@10",
+        "Mean(BM25)": null,
+        "Mean(Dense_Exact)": 0.3532,
+        "Delta (A - B)": 0.0233,
+        "95% CI Lower": 0.0024,
+        "95% CI Upper": 0.0444,
+        "p-value": 0.0296,
+        "Significant?": "YES",
+        "Win %": "30.1%",
+        "Tie %": "40.3%",
+        "Loss %": "29.6%",
+        "Mean(Fixed_Hybrid)": 0.33,
+        "Mean(Adaptive_Router)": null
+      },
+      {
+        "Comparison": "Dense_Exact vs Fixed_Hybrid",
+        "Metric": "Recall@10",
+        "Mean(BM25)": null,
+        "Mean(Dense_Exact)": 0.4133,
+        "Delta (A - B)": 0.002,
+        "95% CI Lower": -0.0233,
+        "95% CI Upper": 0.0281,
+        "p-value": 0.8642,
+        "Significant?": "NO",
+        "Win %": "16.8%",
+        "Tie %": "68.2%",
+        "Loss %": "15.0%",
+        "Mean(Fixed_Hybrid)": 0.4113,
+        "Mean(Adaptive_Router)": null
+      },
+      {
+        "Comparison": "BM25 vs Fixed_Hybrid",
+        "Metric": "nDCG@10",
+        "Mean(BM25)": 0.2247,
+        "Mean(Dense_Exact)": null,
+        "Delta (A - B)": -0.1053,
+        "95% CI Lower": -0.1235,
+        "95% CI Upper": -0.0877,
+        "p-value": 0.0001,
+        "Significant?": "YES",
+        "Win %": "8.5%",
+        "Tie %": "46.3%",
+        "Loss %": "45.2%",
+        "Mean(Fixed_Hybrid)": 0.33,
+        "Mean(Adaptive_Router)": null
+      },
+      {
+        "Comparison": "BM25 vs Fixed_Hybrid",
+        "Metric": "Recall@10",
+        "Mean(BM25)": 0.2843,
+        "Mean(Dense_Exact)": null,
+        "Delta (A - B)": -0.127,
+        "95% CI Lower": -0.1518,
+        "95% CI Upper": -0.1027,
+        "p-value": 0.0001,
+        "Significant?": "YES",
+        "Win %": "3.9%",
+        "Tie %": "67.0%",
+        "Loss %": "29.2%",
+        "Mean(Fixed_Hybrid)": 0.4113,
+        "Mean(Adaptive_Router)": null
+      },
+      {
+        "Comparison": "Fixed_Hybrid vs Adaptive_Router",
+        "Metric": "nDCG@10",
+        "Mean(BM25)": null,
+        "Mean(Dense_Exact)": null,
+        "Delta (A - B)": 0.0083,
+        "95% CI Lower": 0.0034,
+        "95% CI Upper": 0.0139,
+        "p-value": 0.0002,
+        "Significant?": "YES",
+        "Win %": "3.7%",
+        "Tie %": "95.8%",
+        "Loss %": "0.5%",
+        "Mean(Fixed_Hybrid)": 0.33,
+        "Mean(Adaptive_Router)": 0.3216
+      },
+      {
+        "Comparison": "Fixed_Hybrid vs Adaptive_Router",
+        "Metric": "Recall@10",
+        "Mean(BM25)": null,
+        "Mean(Dense_Exact)": null,
+        "Delta (A - B)": 0.0106,
+        "95% CI Lower": 0.0028,
+        "95% CI Upper": 0.0191,
+        "p-value": 0.0064,
+        "Significant?": "YES",
+        "Win %": "1.8%",
+        "Tie %": "98.0%",
+        "Loss %": "0.1%",
+        "Mean(Fixed_Hybrid)": 0.4113,
+        "Mean(Adaptive_Router)": 0.4006
+      },
+      {
+        "Comparison": "BM25 vs Adaptive_Router",
+        "Metric": "nDCG@10",
+        "Mean(BM25)": 0.2247,
+        "Mean(Dense_Exact)": null,
+        "Delta (A - B)": -0.097,
+        "95% CI Lower": -0.1145,
+        "95% CI Upper": -0.0798,
+        "p-value": 0.0001,
+        "Significant?": "YES",
+        "Win %": "8.0%",
+        "Tie %": "50.5%",
+        "Loss %": "41.5%",
+        "Mean(Fixed_Hybrid)": null,
+        "Mean(Adaptive_Router)": 0.3216
+      },
+      {
+        "Comparison": "BM25 vs Adaptive_Router",
+        "Metric": "Recall@10",
+        "Mean(BM25)": 0.2843,
+        "Mean(Dense_Exact)": null,
+        "Delta (A - B)": -0.1164,
+        "95% CI Lower": -0.1404,
+        "95% CI Upper": -0.0932,
+        "p-value": 0.0001,
+        "Significant?": "YES",
+        "Win %": "3.7%",
+        "Tie %": "69.0%",
+        "Loss %": "27.3%",
+        "Mean(Fixed_Hybrid)": null,
+        "Mean(Adaptive_Router)": 0.4006
+      },
+      {
+        "Comparison": "Dense_Exact vs Adaptive_Router",
+        "Metric": "nDCG@10",
+        "Mean(BM25)": null,
+        "Mean(Dense_Exact)": 0.3532,
+        "Delta (A - B)": 0.0316,
+        "95% CI Lower": 0.0099,
+        "95% CI Upper": 0.0537,
+        "p-value": 0.0034,
+        "Significant?": "YES",
+        "Win %": "31.9%",
+        "Tie %": "38.9%",
+        "Loss %": "29.2%",
+        "Mean(Fixed_Hybrid)": null,
+        "Mean(Adaptive_Router)": 0.3216
+      },
+      {
+        "Comparison": "Dense_Exact vs Adaptive_Router",
+        "Metric": "Recall@10",
+        "Mean(BM25)": null,
+        "Mean(Dense_Exact)": 0.4133,
+        "Delta (A - B)": 0.0126,
+        "95% CI Lower": -0.014,
+        "95% CI Upper": 0.0397,
+        "p-value": 0.3434,
+        "Significant?": "NO",
+        "Win %": "18.7%",
+        "Tie %": "66.2%",
+        "Loss %": "15.1%",
+        "Mean(Fixed_Hybrid)": null,
+        "Mean(Adaptive_Router)": 0.4006
+      }
+    ]
+  },
+  "latency_percentiles": {
+    "Fixed_Hybrid": {
+      "p50": 43.74,
+      "p95": 72.31,
+      "p99": 88.55,
+      "mean": 46.3
+    },
+    "Adaptive_Router": {
+      "p50": 34.0,
+      "p95": 70.69,
+      "p99": 101.23,
+      "mean": 34.49
+    }
+  },
+  "non_inferiority_justification": {
+    "margin_delta": 0.025,
+    "prespecified_status": "POST_HOC_EXPLORATORY",
+    "justification_notes": "While delta=0.025 is grounded in information retrieval literature (Voorhees 2000, Carterette 2007) as a practical indifference margin, it was not registered in an immutable study protocol prior to observing Phase 5 data. In strict accordance with scientific integrity, the non-inferiority test is labeled EXPLORATORY POST-HOC ANALYSIS rather than a confirmatory trial."
+  }
+}

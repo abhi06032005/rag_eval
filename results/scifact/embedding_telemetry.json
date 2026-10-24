@@ -1,0 +1,12 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimension": 384,
+  "corpus_count": 5183,
+  "corpus_encoding_seconds": 275.27,
+  "corpus_docs_per_sec": 18.8,
+  "query_count": 300,
+  "query_encoding_seconds": 2.22,
+  "threads": 2,
+  "device": "cpu",
+  "corpus_file_size_bytes": 7961216
+}

@@ -1,0 +1,13 @@
+Comparison,Metric,Mean(BM25),Mean(Dense_Exact),Delta (A - B),95% CI Lower,95% CI Upper,p-value,Significant?,Win %,Tie %,Loss %,Mean(Fixed_Hybrid),Mean(Adaptive_Router)
+BM25 vs Dense_Exact,nDCG@10,0.6432,0.6451,-0.0019,-0.0429,0.0385,0.9528,NO,22.3%,52.0%,25.7%,,
+BM25 vs Dense_Exact,Recall@10,0.7605,0.7833,-0.0228,-0.0697,0.025,0.3586,NO,8.0%,80.3%,11.7%,,
+Dense_Exact vs Fixed_Hybrid,nDCG@10,,0.6451,-0.0348,-0.064,-0.0053,0.0222,YES,14.0%,58.3%,27.7%,0.6799,
+Dense_Exact vs Fixed_Hybrid,Recall@10,,0.7833,-0.0271,-0.0707,0.0147,0.2066,NO,6.7%,84.3%,9.0%,0.8104,
+BM25 vs Fixed_Hybrid,nDCG@10,0.6432,,-0.0366,-0.0589,-0.0145,0.0016,YES,9.0%,68.0%,23.0%,0.6799,
+BM25 vs Fixed_Hybrid,Recall@10,0.7605,,-0.0499,-0.0807,-0.0214,0.0008,YES,1.3%,90.7%,8.0%,0.8104,
+Fixed_Hybrid vs Adaptive_Router,nDCG@10,,,-0.0062,-0.0168,0.0034,0.2214,NO,3.7%,92.3%,4.0%,0.6799,0.6861
+Fixed_Hybrid vs Adaptive_Router,Recall@10,,,0.0011,-0.0145,0.0161,0.9328,NO,1.7%,97.3%,1.0%,0.8104,0.8093
+BM25 vs Adaptive_Router,nDCG@10,0.6432,,-0.0429,-0.0627,-0.0235,0.0001,YES,5.0%,75.7%,19.3%,,0.6861
+BM25 vs Adaptive_Router,Recall@10,0.7605,,-0.0488,-0.0753,-0.0248,0.0001,YES,0.3%,93.3%,6.3%,,0.8093
+Dense_Exact vs Adaptive_Router,nDCG@10,,0.6451,-0.041,-0.0733,-0.0086,0.0134,YES,15.3%,57.7%,27.0%,,0.6861
+Dense_Exact vs Adaptive_Router,Recall@10,,0.7833,-0.0259,-0.0706,0.0167,0.2354,NO,7.3%,83.3%,9.3%,,0.8093
