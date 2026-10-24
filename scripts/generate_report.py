@@ -30,7 +30,7 @@ def generate_research_report(
 
     report = f"""# RAGScaleBench Empirical Systems Research Report
 **Project:** RAGScaleBench: A Reproducible Benchmark of Retrieval Quality, Memory, Latency, Quantisation and Load Saturation in Production RAG Systems
-**Programme / Portfolio:** European Master in Dependable Intelligent Software Systems (EDISS)
+**Research area:** RAG performance and retrieval systems
 **Execution Date:** {df["timestamp"].iloc[-1]}
 **Corpus Scale:** {df["documents"].iloc[0]} core canonical documents ({df["chunks"].iloc[0]} processed vector chunks)
 
